@@ -576,10 +576,22 @@ hr {
     top: 5%;
     font-size: 2vh;
     color: #143642; }
-  .ShopSection .MedTitle {
-    font-weight: 700; }
-  .ShopSection .WhyTitle {
-    padding-top: 2%; }
+    .ShopSection .InfoContainer .MedTitle {
+      font-weight: 700; }
+    .ShopSection .InfoContainer .WhyTitle {
+      padding-top: 2%; }
+  .ShopSection .SpecialsTitle {
+    top: 40%; }
+  .ShopSection .SpecialsHR {
+    top: 47%; }
+  .ShopSection .SpecialsInfo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    top: 53%;
+    font-size: 2vh;
+    color: #143642; }
 
 .PageDividerSection {
   position: relative;

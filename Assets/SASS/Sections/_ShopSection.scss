@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     height: 150vh;
+
     background-color: $Beige;
     font-family: "Open Sans";
 
@@ -9,6 +10,7 @@
         top: 20%;
         width: 80%;
         height: 100%;
+
         @include CenterX;
     }
 
@@ -31,16 +33,35 @@
 
     .InfoContainer {
         top: 5%;
+
+        @include RegularSize;
+        color: $Dark-Blue;
+
+        .MedTitle {
+            font-weight: 700;
+        }
+
+        .WhyTitle {
+            padding-top: 2%;
+        }
+    }
+    
+    .SpecialsTitle{
+        top: 40%;
+    }
+    
+    .SpecialsHR{
+        top: 47%;
+    }
+    
+    .SpecialsInfo{
+        @include CenterX;
+        text-align: center;
+        top: 53%;
         @include RegularSize;
         color: $Dark-Blue;
     }
 
-    .MedTitle {
-        font-weight: 700;
-    }
 
-    .WhyTitle {
-        padding-top: 2%;
-    }
 
 }
