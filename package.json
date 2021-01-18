@@ -1,0 +1,22 @@
+{
+  "name": "daily_brunch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass Assets/SASS/main.scss Assets/CSS/index.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jake1995Young/Daily_Brunch.git"
+  },
+  "author": "Jake Young",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jake1995Young/Daily_Brunch/issues"
+  },
+  "homepage": "https://github.com/Jake1995Young/Daily_Brunch#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

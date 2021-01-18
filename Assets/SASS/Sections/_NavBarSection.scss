@@ -1,0 +1,67 @@
+.NavBarSection {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 7%;
+    
+    z-index: 3;
+    background-color: $Beige;
+
+    .BusinessLogo1 {
+        position: absolute;
+        left: 15%;
+        font-size: 6vh;
+        color: $Dark-Blue;
+    }
+
+    .BusinessLogo2 {
+        position: absolute;
+        left: 30.5%;
+        font-size: 6vh;
+        color: $Dark-Blue;
+    }
+
+    .BusinessName {
+        position: absolute;
+        left: 16.5%;
+
+        font-family: LobsterTwo-Bold;
+        font-size: 5vh;
+        color: $Dark-Blue;
+    }
+
+    .NavBar {
+        position: relative;
+        top: 25%;
+        left: 60%;
+        width: 40%;
+
+        list-style-type: none;
+    }
+
+    .NavLink {
+        display: inline;
+        font-size: 2.5vh;
+        padding: 2.5%;
+        font-family: LobsterTwo-Regular;
+        color: $Dark-Blue;
+        height: 10%;
+        
+        /*Slowly transition to button background*/
+        transition-duration: .2s;
+        transition-timing-function: ease-out;
+
+        &:hover {
+            background: $Dark-Blue;
+            color: $Beige;
+            
+            /*Button Shape*/
+            border-top-left-radius: 35px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 35px;
+            
+            transition-timing-function: ease-in;
+        }
+    }
+}

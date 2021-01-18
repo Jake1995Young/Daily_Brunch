@@ -1,0 +1,136 @@
+/*
+    This is the main CSS file which will retrieve the other SCSS files and convert them into one CSS
+*/
+/*Center any object to the the center of the page*/
+/*
+    Base Page for CSS which will give some standard style for the whole site
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /*Allow for smooth scrolling from one section to another*/
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+/*Fonts*/
+@font-face {
+  font-family: LobsterTwo-Bold;
+  src: url(/Assets/Fonts/LobsterTwo-BoldItalic.ttf); }
+
+@font-face {
+  font-family: LobsterTwo-Regular;
+  src: url(/Assets/Fonts/LobsterTwo-Regular.ttf); }
+
+@font-face {
+  font-family: Flaticon;
+  src: url(/Assets/Fonts/Flaticon.ttf); }
+
+/*Colours*/
+.NavBarSection {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 7%;
+  z-index: 3;
+  background-color: #F7ECE4; }
+  .NavBarSection .BusinessLogo1 {
+    position: absolute;
+    left: 15%;
+    font-size: 6vh;
+    color: #143642; }
+  .NavBarSection .BusinessLogo2 {
+    position: absolute;
+    left: 30.5%;
+    font-size: 6vh;
+    color: #143642; }
+  .NavBarSection .BusinessName {
+    position: absolute;
+    left: 16.5%;
+    font-family: LobsterTwo-Bold;
+    font-size: 5vh;
+    color: #143642; }
+  .NavBarSection .NavBar {
+    position: relative;
+    top: 25%;
+    left: 60%;
+    width: 40%;
+    list-style-type: none; }
+  .NavBarSection .NavLink {
+    display: inline;
+    font-size: 2.5vh;
+    padding: 2.5%;
+    font-family: LobsterTwo-Regular;
+    color: #143642;
+    height: 10%;
+    /*Slowly transition to button background*/
+    transition-duration: .2s;
+    transition-timing-function: ease-out; }
+    .NavBarSection .NavLink:hover {
+      background: #143642;
+      color: #F7ECE4;
+      /*Button Shape*/
+      border-top-left-radius: 35px;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 35px;
+      transition-timing-function: ease-in; }
+
+.WelcomeSection {
+  position: relative;
+  height: 100vh;
+  background-color: #F7ECE4; }
+  .WelcomeSection .Main {
+    position: absolute;
+    top: 7%;
+    width: 100%;
+    height: 70%;
+    background-image: linear-gradient(rgba(183, 105, 53, 0.5), rgba(20, 54, 66, 0.3)), url(/Assets/Images/FoodTable.jpg);
+    color: #F7ECE4;
+    font-family: 'Open Sans', sans-serif; }
+    .WelcomeSection .Main .Logo {
+      font-family: "Flaticon";
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      font-size: 10vh;
+      display: inline;
+      font-style: normal;
+      transform: translateX(-50%); }
+    .WelcomeSection .Main .Name {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      font-size: 5vh;
+      transform: translate(-50%, -50%); }
+    .WelcomeSection .Main .Slogan {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      font-size: 2vh;
+      transform: translate(-50%, -50%); }
+
+/*Responsive Web Design - Max 1300px*/
+@media only screen and (max-width: 1300px) {
+  .AboutSection .Commentary .Quote {
+    font-size: 2vh; }
+  .AboutSection .Commentary .SmallQuote {
+    font-size: 1.8vh; } }
+
+/*Responsive Web Design - Max 1800px*/
+@media only screen and (max-width: 1800px) {
+  nav {
+    top: 2.5%;
+    width: 30%; }
+    nav .NavList a {
+      font-size: 3vh; } }
+
+@media only screen and (max-width: 1500px) {
+  nav {
+    width: 35%; } }

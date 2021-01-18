@@ -1,0 +1,26 @@
+/*
+    This is the main CSS file which will retrieve the other SCSS files and convert them into one CSS
+*/
+
+@import "Abstracts/Mixins";
+
+@import "Base/Base";
+@import "Base/Colours";
+
+@import "Sections/NavBarSection";
+@import "Sections/WelcomeSection";
+@import "Sections/OfferSection";
+@import "Sections/ShopSection";
+@import "Sections/TeamSection";
+@import "Sections/ContactSection";
+
+
+@import "RWD/1300";
+@import "RWD/1800";
+
+
+
+
+
+
+

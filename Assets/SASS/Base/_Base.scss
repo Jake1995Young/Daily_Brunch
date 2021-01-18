@@ -1,0 +1,37 @@
+/*
+    Base Page for CSS which will give some standard style for the whole site
+*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /*Allow for smooth scrolling from one section to another*/
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+/*Fonts*/
+@font-face {
+    font-family: LobsterTwo-Bold;
+    src: url(/Assets/Fonts/LobsterTwo-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: LobsterTwo-Regular;
+    src: url(/Assets/Fonts/LobsterTwo-Regular.ttf);
+}
+
+@font-face {
+    font-family: Flaticon;
+    src: url(/Assets/Fonts/Flaticon.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
