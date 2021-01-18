@@ -8,40 +8,35 @@
 
     .Title {
         color: $Light-Brown;
-        font-size: 6vh;
+        @include HeaderSize;
     }
 
     hr {
-        position: absolute;
         top: 10%;
-        left: 50%;
-        transform: translateX(-50%);
+        width: 20%;
+        height: .3vh;
+        
+        @include CenterX;
         margin: 0 auto;
         margin-top: 40px;
-        width: 20%;
         border: 0;
-        height: 2px;
         background-image: linear-gradient(to right, rgba(20, 54, 66, 0), rgba(20, 54, 66, 0.75), rgba(255, 255, 255, 0));
     }
 
     .Info {
-        position: absolute;
         top: 25%;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 2vh;
-        
         width: 35%;
+        
+        @include RegularSize;
+        @include CenterX;
     }
 
     .OffersList {
-        position: absolute;
         top: 40%;
-        left: 50%;
         width: 60%;
         height: 45%;
 
-        transform: translateX(-50%);
+        @include CenterX;
     }
 
     .Offers {
@@ -52,17 +47,17 @@
     .OfferIcon {
         font-family: "Gastronomy-Flaticon";
         font-style: normal;
-        font-size: 6vh;
+        @include HeaderSize;
         color: $Light-Brown;
     }
 
     .OfferTitle {
-        padding: 2%;
+        @include RegularPadding;
         font-weight: 700;
     }
 
     .OfferDesc {
-        padding: 2%;
+        @include RegularPadding;
         font-size: 2vh;
     }
 }

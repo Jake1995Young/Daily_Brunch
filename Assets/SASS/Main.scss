@@ -7,13 +7,15 @@
 @import "Base/Base";
 @import "Base/Colours";
 
+@import "Components/Button";
+
 @import "Sections/NavBarSection";
 @import "Sections/WelcomeSection";
 @import "Sections/OfferSection";
 @import "Sections/ShopSection";
 @import "Sections/TeamSection";
 @import "Sections/ContactSection";
-
+@import "Sections/PageDividerSection";
 
 @import "RWD/1300";
 @import "RWD/1800";

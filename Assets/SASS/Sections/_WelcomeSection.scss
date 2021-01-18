@@ -18,71 +18,31 @@
 
         .Logo {
             font-family: "Breakfast-Flaticon";
-            position: absolute;
             top: 20%;
-            left: 50%;
-            font-size: 10vh;
+            @include IconSize;
             display: inline;
             font-style: normal;
-            transform: translateX(-50%);
+            @include CenterX;
 
         }
 
         .Name {
-            position: absolute;
             top: 35%;
-            left: 50%;
 
-            font-size: 5vh;
-            transform: translateX(-50%);
+            @include CenterX;
+            @include HeaderSize;
         }
 
         .Slogan {
-            position: absolute;
             top: 45%;
-            left: 50%;
 
-            font-size: 2vh;
-            transform: translateX(-50%);
+            @include RegularSize;
+            @include CenterX;
         }
-
-        .Button {
-            
-            background: $Light-Brown;
-            position: absolute;
+        
+        .SpecialsBtn{
             top: 60%;
-            left: 0%;
-            color: $Beige;
-            cursor: pointer;
-            font-size: 2em;
-            padding: 1.5rem;
-            border: 0;
-            transition: all 0.5s;
-            border-radius: 10px;
-            width: auto;
-            position: relative;
-
-            &::after {
-                content: " \f30f";
-                font-family: "Ion-Flaticon";
-                font-weight: 400;
-                opacity: 0;
-
-            }
-
-            &:hover {
-                background: $Dark-Blue;
-                transition: all 0.5s;
-                border-radius: 10px;
-                box-shadow: 0px 6px 15px $Dark-Blue;
-                padding: 1.5rem 2rem 1.5rem 2rem;
-
-                &::after {
-                    opacity: 1;
-                    transition: all 0.5s;
-
-                }
-            }
+            @include CenterX;
         }
     }
 }

@@ -41,6 +41,32 @@ html {
   src: url(/Assets/Fonts/Gastronomy-Flaticon.ttf); }
 
 /*Colours*/
+.Button {
+  background: #b76935;
+  color: #f7ece4;
+  cursor: pointer;
+  font-size: 2em;
+  padding: 1.5rem;
+  border: 0;
+  transition: all 0.5s;
+  border-radius: 10px;
+  width: auto;
+  position: relative; }
+  .Button::after {
+    content: " \f30f";
+    font-family: "Ion-Flaticon";
+    font-weight: 400;
+    opacity: 0; }
+  .Button:hover {
+    background: #143642;
+    transition: all 0.5s;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px #143642;
+    padding: 1.5rem 2rem 1.5rem 2rem; }
+    .Button:hover::after {
+      opacity: 1;
+      transition: all 0.5s; }
+
 .NavBarSection {
   position: fixed;
   top: 0%;
@@ -108,53 +134,30 @@ html {
     font-family: 'Open Sans', sans-serif; }
     .WelcomeSection .Main .Logo {
       font-family: "Breakfast-Flaticon";
-      position: absolute;
       top: 20%;
-      left: 50%;
       font-size: 10vh;
       display: inline;
       font-style: normal;
+      position: absolute;
+      left: 50%;
       transform: translateX(-50%); }
     .WelcomeSection .Main .Name {
-      position: absolute;
       top: 35%;
+      position: absolute;
       left: 50%;
-      font-size: 5vh;
-      transform: translateX(-50%); }
+      transform: translateX(-50%);
+      font-size: 6vh; }
     .WelcomeSection .Main .Slogan {
-      position: absolute;
       top: 45%;
-      left: 50%;
       font-size: 2vh;
-      transform: translateX(-50%); }
-    .WelcomeSection .Main .Button {
-      background: #b76935;
       position: absolute;
+      left: 50%;
+      transform: translateX(-50%); }
+    .WelcomeSection .Main .SpecialsBtn {
       top: 60%;
-      left: 0%;
-      color: #f7ece4;
-      cursor: pointer;
-      font-size: 2em;
-      padding: 1.5rem;
-      border: 0;
-      transition: all 0.5s;
-      border-radius: 10px;
-      width: auto;
-      position: relative; }
-      .WelcomeSection .Main .Button::after {
-        content: " \f30f";
-        font-family: "Ion-Flaticon";
-        font-weight: 400;
-        opacity: 0; }
-      .WelcomeSection .Main .Button:hover {
-        background: #143642;
-        transition: all 0.5s;
-        border-radius: 10px;
-        box-shadow: 0px 6px 15px #143642;
-        padding: 1.5rem 2rem 1.5rem 2rem; }
-        .WelcomeSection .Main .Button:hover::after {
-          opacity: 1;
-          transition: all 0.5s; }
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); }
 
 .OfferSection {
   position: relative;
@@ -166,29 +169,29 @@ html {
     color: #b76935;
     font-size: 6vh; }
   .OfferSection hr {
-    position: absolute;
     top: 10%;
+    width: 20%;
+    height: .3vh;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
     margin: 0 auto;
     margin-top: 40px;
-    width: 20%;
     border: 0;
-    height: 2px;
     background-image: linear-gradient(to right, rgba(20, 54, 66, 0), rgba(20, 54, 66, 0.75), rgba(255, 255, 255, 0)); }
   .OfferSection .Info {
-    position: absolute;
     top: 25%;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 35%;
     font-size: 2vh;
-    width: 35%; }
-  .OfferSection .OffersList {
     position: absolute;
-    top: 40%;
     left: 50%;
+    transform: translateX(-50%); }
+  .OfferSection .OffersList {
+    top: 40%;
     width: 60%;
     height: 45%;
+    position: absolute;
+    left: 50%;
     transform: translateX(-50%); }
   .OfferSection .Offers {
     text-align: center;
@@ -204,6 +207,34 @@ html {
   .OfferSection .OfferDesc {
     padding: 2%;
     font-size: 2vh; }
+
+.PageDividerSection {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  background-color: #143642; }
+  .PageDividerSection .Info {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    font-size: 2vh;
+    transform: translate(-50%, -50%);
+    color: #f7ece4; }
+  .PageDividerSection .ReserveBtn {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateY(-50%); }
+  .PageDividerSection .Button:hover {
+    background: #f7ece4;
+    color: #143642; }
+  .PageDividerSection .scallop-down {
+    position: absolute;
+    top: 100%;
+    height: 5vh;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(#143642), color-stop(0.49, #143642), color-stop(0.51, #f7ece4), to(#f7ece4));
+    -webkit-background-size: 49px 100%; }
 
 /*Responsive Web Design - Max 1300px*/
 @media only screen and (max-width: 1300px) {
