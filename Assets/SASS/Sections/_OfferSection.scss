@@ -12,15 +12,11 @@
     }
 
     hr {
-        top: 10%;
+        top: 15%;
         width: 20%;
         height: .3vh;
         
         @include CenterX;
-        margin: 0 auto;
-        margin-top: 40px;
-        border: 0;
-        background-image: linear-gradient(to right, rgba(20, 54, 66, 0), rgba(20, 54, 66, 0.75), rgba(255, 255, 255, 0));
     }
 
     .Info {

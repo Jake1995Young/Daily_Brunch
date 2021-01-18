@@ -40,6 +40,9 @@ html {
   font-family: Gastronomy-Flaticon;
   src: url(/Assets/Fonts/Gastronomy-Flaticon.ttf); }
 
+hr {
+  background-image: linear-gradient(to right, rgba(20, 54, 66, 0), rgba(20, 54, 66, 0.75), rgba(255, 255, 255, 0)); }
+
 /*Colours*/
 .Button {
   background: #b76935;
@@ -66,6 +69,343 @@ html {
     .Button:hover::after {
       opacity: 1;
       transition: all 0.5s; }
+
+.frame {
+  display: grid;
+  height: 40vh;
+  background: #f7ece4;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr); }
+
+.frame .slice {
+  width: calc(100% + 0.5px);
+  height: calc(100% + 0.5px);
+  background-image: url(/Assets/Images/Restaurant.jpeg);
+  background-size: 800% 800%;
+  position: relative; }
+
+.frame .slice:nth-of-type(1) {
+  transition: all 1.57136235s;
+  background-position: 0% 0%;
+  transform: translateX(-15.01801vw) translateY(-20.2502vh) rotate(0.96701turn); }
+
+.frame .slice:nth-of-type(2) {
+  transition: all 1.40150589s;
+  background-position: 14.28571429% 0%;
+  transform: translateX(-11.78963vw) translateY(-0.99171vh) rotate(0.06523turn); }
+
+.frame .slice:nth-of-type(3) {
+  transition: all 1.70500027s;
+  background-position: 28.57142857% 0%;
+  transform: translateX(-27.66704vw) translateY(3.09194vh) rotate(0.07529turn); }
+
+.frame .slice:nth-of-type(4) {
+  transition: all 1.56355394s;
+  background-position: 42.85714286% 0%;
+  transform: translateX(-34.30416vw) translateY(1.06048vh) rotate(0.45631turn); }
+
+.frame .slice:nth-of-type(5) {
+  transition: all 1.57605031s;
+  background-position: 57.14285714% 0%;
+  transform: translateX(-34.46537vw) translateY(21.9492vh) rotate(0.71765turn); }
+
+.frame .slice:nth-of-type(6) {
+  transition: all 1.94210824s;
+  background-position: 71.42857143% 0%;
+  transform: translateX(25.66423vw) translateY(23.88131vh) rotate(0.12722turn); }
+
+.frame .slice:nth-of-type(7) {
+  transition: all 1.0392041s;
+  background-position: 85.71428571% 0%;
+  transform: translateX(-47.5221vw) translateY(-3.44847vh) rotate(0.56547turn); }
+
+.frame .slice:nth-of-type(8) {
+  transition: all 1.27658173s;
+  background-position: 100% 0%;
+  transform: translateX(-40.18919vw) translateY(10.68631vh) rotate(0.73949turn); }
+
+.frame .slice:nth-of-type(9) {
+  transition: all 1.6419607s;
+  background-position: 0% 14.28571429%;
+  transform: translateX(40.06242vw) translateY(-0.34316vh) rotate(0.96625turn); }
+
+.frame .slice:nth-of-type(10) {
+  transition: all 1.63615551s;
+  background-position: 14.28571429% 14.28571429%;
+  transform: translateX(27.26025vw) translateY(-20.28225vh) rotate(0.42031turn); }
+
+.frame .slice:nth-of-type(11) {
+  transition: all 1.35872187s;
+  background-position: 28.57142857% 14.28571429%;
+  transform: translateX(-36.06729vw) translateY(15.15925vh) rotate(0.21609turn); }
+
+.frame .slice:nth-of-type(12) {
+  transition: all 1.49633152s;
+  background-position: 42.85714286% 14.28571429%;
+  transform: translateX(36.23634vw) translateY(-14.80075vh) rotate(0.48377turn); }
+
+.frame .slice:nth-of-type(13) {
+  transition: all 1.02003387s;
+  background-position: 57.14285714% 14.28571429%;
+  transform: translateX(36.38001vw) translateY(13.64985vh) rotate(0.08571turn); }
+
+.frame .slice:nth-of-type(14) {
+  transition: all 1.57295314s;
+  background-position: 71.42857143% 14.28571429%;
+  transform: translateX(2.587vw) translateY(23.72994vh) rotate(0.47424turn); }
+
+.frame .slice:nth-of-type(15) {
+  transition: all 1.91250591s;
+  background-position: 85.71428571% 14.28571429%;
+  transform: translateX(49.09533vw) translateY(16.23715vh) rotate(0.66136turn); }
+
+.frame .slice:nth-of-type(16) {
+  transition: all 1.44475473s;
+  background-position: 100% 14.28571429%;
+  transform: translateX(26.59218vw) translateY(5.50075vh) rotate(0.65866turn); }
+
+.frame .slice:nth-of-type(17) {
+  transition: all 1.30438035s;
+  background-position: 0% 28.57142857%;
+  transform: translateX(36.59393vw) translateY(-7.84688vh) rotate(0.83217turn); }
+
+.frame .slice:nth-of-type(18) {
+  transition: all 1.0683666s;
+  background-position: 14.28571429% 28.57142857%;
+  transform: translateX(-36.86237vw) translateY(3.52434vh) rotate(0.59151turn); }
+
+.frame .slice:nth-of-type(19) {
+  transition: all 1.18023827s;
+  background-position: 28.57142857% 28.57142857%;
+  transform: translateX(-39.8021vw) translateY(-13.84593vh) rotate(0.64116turn); }
+
+.frame .slice:nth-of-type(20) {
+  transition: all 1.92775279s;
+  background-position: 42.85714286% 28.57142857%;
+  transform: translateX(-0.72751vw) translateY(11.59762vh) rotate(0.28361turn); }
+
+.frame .slice:nth-of-type(21) {
+  transition: all 1.96379246s;
+  background-position: 57.14285714% 28.57142857%;
+  transform: translateX(-10.62085vw) translateY(23.22751vh) rotate(0.17696turn); }
+
+.frame .slice:nth-of-type(22) {
+  transition: all 1.30106766s;
+  background-position: 71.42857143% 28.57142857%;
+  transform: translateX(-11.37424vw) translateY(-0.87965vh) rotate(0.95145turn); }
+
+.frame .slice:nth-of-type(23) {
+  transition: all 1.38281356s;
+  background-position: 85.71428571% 28.57142857%;
+  transform: translateX(-19.9715vw) translateY(0.33047vh) rotate(0.45399turn); }
+
+.frame .slice:nth-of-type(24) {
+  transition: all 1.39050383s;
+  background-position: 100% 28.57142857%;
+  transform: translateX(4.54708vw) translateY(10.23528vh) rotate(0.74582turn); }
+
+.frame .slice:nth-of-type(25) {
+  transition: all 1.80799493s;
+  background-position: 0% 42.85714286%;
+  transform: translateX(-4.54533vw) translateY(-19.70585vh) rotate(0.19186turn); }
+
+.frame .slice:nth-of-type(26) {
+  transition: all 1.80636703s;
+  background-position: 14.28571429% 42.85714286%;
+  transform: translateX(41.65522vw) translateY(-11.18392vh) rotate(0.46057turn); }
+
+.frame .slice:nth-of-type(27) {
+  transition: all 1.06673123s;
+  background-position: 28.57142857% 42.85714286%;
+  transform: translateX(30.13568vw) translateY(5.55016vh) rotate(0.43962turn); }
+
+.frame .slice:nth-of-type(28) {
+  transition: all 1.70401041s;
+  background-position: 42.85714286% 42.85714286%;
+  transform: translateX(9.96514vw) translateY(-2.31508vh) rotate(0.009turn); }
+
+.frame .slice:nth-of-type(29) {
+  transition: all 1.25407233s;
+  background-position: 57.14285714% 42.85714286%;
+  transform: translateX(16.89622vw) translateY(13.75339vh) rotate(0.52415turn); }
+
+.frame .slice:nth-of-type(30) {
+  transition: all 1.03566245s;
+  background-position: 71.42857143% 42.85714286%;
+  transform: translateX(49.84148vw) translateY(-13.36507vh) rotate(0.15195turn); }
+
+.frame .slice:nth-of-type(31) {
+  transition: all 1.41170757s;
+  background-position: 85.71428571% 42.85714286%;
+  transform: translateX(-45.47802vw) translateY(1.27975vh) rotate(0.71006turn); }
+
+.frame .slice:nth-of-type(32) {
+  transition: all 1.20045459s;
+  background-position: 100% 42.85714286%;
+  transform: translateX(38.51634vw) translateY(1.75871vh) rotate(0.18729turn); }
+
+.frame .slice:nth-of-type(33) {
+  transition: all 1.82448238s;
+  background-position: 0% 57.14285714%;
+  transform: translateX(-42.59949vw) translateY(4.44558vh) rotate(0.05169turn); }
+
+.frame .slice:nth-of-type(34) {
+  transition: all 1.8796981s;
+  background-position: 14.28571429% 57.14285714%;
+  transform: translateX(-24.97945vw) translateY(-24.88135vh) rotate(0.17203turn); }
+
+.frame .slice:nth-of-type(35) {
+  transition: all 1.40657392s;
+  background-position: 28.57142857% 57.14285714%;
+  transform: translateX(7.52523vw) translateY(-10.20552vh) rotate(0.20884turn); }
+
+.frame .slice:nth-of-type(36) {
+  transition: all 1.61723863s;
+  background-position: 42.85714286% 57.14285714%;
+  transform: translateX(23.17593vw) translateY(3.54197vh) rotate(0.27223turn); }
+
+.frame .slice:nth-of-type(37) {
+  transition: all 1.11033839s;
+  background-position: 57.14285714% 57.14285714%;
+  transform: translateX(5.06167vw) translateY(-0.84886vh) rotate(0.52078turn); }
+
+.frame .slice:nth-of-type(38) {
+  transition: all 1.9422406s;
+  background-position: 71.42857143% 57.14285714%;
+  transform: translateX(-40.263vw) translateY(10.22993vh) rotate(0.93197turn); }
+
+.frame .slice:nth-of-type(39) {
+  transition: all 1.28805257s;
+  background-position: 85.71428571% 57.14285714%;
+  transform: translateX(-24.19127vw) translateY(7.92233vh) rotate(0.9439turn); }
+
+.frame .slice:nth-of-type(40) {
+  transition: all 1.63156855s;
+  background-position: 100% 57.14285714%;
+  transform: translateX(49.38777vw) translateY(12.1402vh) rotate(0.17324turn); }
+
+.frame .slice:nth-of-type(41) {
+  transition: all 1.32678041s;
+  background-position: 0% 71.42857143%;
+  transform: translateX(27.33389vw) translateY(24.12163vh) rotate(0.52407turn); }
+
+.frame .slice:nth-of-type(42) {
+  transition: all 1.24001721s;
+  background-position: 14.28571429% 71.42857143%;
+  transform: translateX(11.84547vw) translateY(4.15037vh) rotate(0.3162turn); }
+
+.frame .slice:nth-of-type(43) {
+  transition: all 1.77011597s;
+  background-position: 28.57142857% 71.42857143%;
+  transform: translateX(17.10197vw) translateY(-12.62855vh) rotate(0.03214turn); }
+
+.frame .slice:nth-of-type(44) {
+  transition: all 1.99713883s;
+  background-position: 42.85714286% 71.42857143%;
+  transform: translateX(5.67749vw) translateY(4.00492vh) rotate(0.50826turn); }
+
+.frame .slice:nth-of-type(45) {
+  transition: all 1.05093504s;
+  background-position: 57.14285714% 71.42857143%;
+  transform: translateX(-31.05991vw) translateY(-23.08197vh) rotate(0.40343turn); }
+
+.frame .slice:nth-of-type(46) {
+  transition: all 1.41169179s;
+  background-position: 71.42857143% 71.42857143%;
+  transform: translateX(12.78898vw) translateY(-11.49444vh) rotate(0.55387turn); }
+
+.frame .slice:nth-of-type(47) {
+  transition: all 1.75325966s;
+  background-position: 85.71428571% 71.42857143%;
+  transform: translateX(-0.70375vw) translateY(-20.12795vh) rotate(0.92029turn); }
+
+.frame .slice:nth-of-type(48) {
+  transition: all 1.36681243s;
+  background-position: 100% 71.42857143%;
+  transform: translateX(19.51094vw) translateY(-15.26902vh) rotate(0.88295turn); }
+
+.frame .slice:nth-of-type(49) {
+  transition: all 1.56501141s;
+  background-position: 0% 85.71428571%;
+  transform: translateX(-28.39237vw) translateY(7.00752vh) rotate(0.91795turn); }
+
+.frame .slice:nth-of-type(50) {
+  transition: all 1.35324861s;
+  background-position: 14.28571429% 85.71428571%;
+  transform: translateX(-14.78195vw) translateY(-10.62229vh) rotate(0.99463turn); }
+
+.frame .slice:nth-of-type(51) {
+  transition: all 1.68040158s;
+  background-position: 28.57142857% 85.71428571%;
+  transform: translateX(-46.32581vw) translateY(2.3384vh) rotate(0.48799turn); }
+
+.frame .slice:nth-of-type(52) {
+  transition: all 1.88299991s;
+  background-position: 42.85714286% 85.71428571%;
+  transform: translateX(15.18865vw) translateY(-16.30907vh) rotate(0.99158turn); }
+
+.frame .slice:nth-of-type(53) {
+  transition: all 1.53405613s;
+  background-position: 57.14285714% 85.71428571%;
+  transform: translateX(26.81898vw) translateY(21.61153vh) rotate(0.66723turn); }
+
+.frame .slice:nth-of-type(54) {
+  transition: all 1.62815856s;
+  background-position: 71.42857143% 85.71428571%;
+  transform: translateX(-48.47497vw) translateY(-10.96469vh) rotate(0.51238turn); }
+
+.frame .slice:nth-of-type(55) {
+  transition: all 1.05719504s;
+  background-position: 85.71428571% 85.71428571%;
+  transform: translateX(3.03918vw) translateY(0.94839vh) rotate(0.39805turn); }
+
+.frame .slice:nth-of-type(56) {
+  transition: all 1.82704499s;
+  background-position: 100% 85.71428571%;
+  transform: translateX(-26.15755vw) translateY(-19.70761vh) rotate(0.28565turn); }
+
+.frame .slice:nth-of-type(57) {
+  transition: all 1.93940218s;
+  background-position: 0% 100%;
+  transform: translateX(7.11885vw) translateY(-0.89183vh) rotate(0.08854turn); }
+
+.frame .slice:nth-of-type(58) {
+  transition: all 1.96973915s;
+  background-position: 14.28571429% 100%;
+  transform: translateX(-1.58426vw) translateY(-24.51228vh) rotate(0.67508turn); }
+
+.frame .slice:nth-of-type(59) {
+  transition: all 1.55809487s;
+  background-position: 28.57142857% 100%;
+  transform: translateX(-36.3878vw) translateY(-17.83613vh) rotate(0.89722turn); }
+
+.frame .slice:nth-of-type(60) {
+  transition: all 1.24113011s;
+  background-position: 42.85714286% 100%;
+  transform: translateX(-15.00304vw) translateY(8.83776vh) rotate(0.23582turn); }
+
+.frame .slice:nth-of-type(61) {
+  transition: all 1.08876962s;
+  background-position: 57.14285714% 100%;
+  transform: translateX(-46.88129vw) translateY(-11.05167vh) rotate(0.15448turn); }
+
+.frame .slice:nth-of-type(62) {
+  transition: all 1.0835554s;
+  background-position: 71.42857143% 100%;
+  transform: translateX(-5.17173vw) translateY(-11.41902vh) rotate(0.48019turn); }
+
+.frame .slice:nth-of-type(63) {
+  transition: all 1.53448304s;
+  background-position: 85.71428571% 100%;
+  transform: translateX(-14.11335vw) translateY(1.9835vh) rotate(0.07876turn); }
+
+.frame .slice:nth-of-type(64) {
+  transition: all 1.45527398s;
+  background-position: 100% 100%;
+  transform: translateX(23.43589vw) translateY(1.37568vh) rotate(0.27673turn); }
+
+.Container:hover .slice {
+  transform: translate(0, 0) rotate(0); }
 
 .NavBarSection {
   position: fixed;
@@ -169,16 +509,12 @@ html {
     color: #b76935;
     font-size: 6vh; }
   .OfferSection hr {
-    top: 10%;
+    top: 15%;
     width: 20%;
     height: .3vh;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    margin: 0 auto;
-    margin-top: 40px;
-    border: 0;
-    background-image: linear-gradient(to right, rgba(20, 54, 66, 0), rgba(20, 54, 66, 0.75), rgba(255, 255, 255, 0)); }
+    transform: translateX(-50%); }
   .OfferSection .Info {
     top: 25%;
     width: 35%;
@@ -208,6 +544,43 @@ html {
     padding: 2%;
     font-size: 2vh; }
 
+.ShopSection {
+  position: relative;
+  width: 100%;
+  height: 150vh;
+  background-color: #f7ece4;
+  font-family: "Open Sans"; }
+  .ShopSection .Container {
+    top: 20%;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+  .ShopSection hr {
+    top: 12%;
+    width: 20%;
+    height: .3vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+  .ShopSection .Title {
+    top: 5%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #b76935;
+    font-size: 6vh; }
+  .ShopSection .InfoContainer {
+    top: 5%;
+    font-size: 2vh;
+    color: #143642; }
+  .ShopSection .MedTitle {
+    font-weight: 700; }
+  .ShopSection .WhyTitle {
+    padding-top: 2%; }
+
 .PageDividerSection {
   position: relative;
   width: 100%;
@@ -228,7 +601,7 @@ html {
   .PageDividerSection .Button:hover {
     background: #f7ece4;
     color: #143642; }
-  .PageDividerSection .scallop-down {
+  .PageDividerSection .BubbleDivider {
     position: absolute;
     top: 100%;
     height: 5vh;

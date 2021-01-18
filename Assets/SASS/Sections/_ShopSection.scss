@@ -1,0 +1,46 @@
+.ShopSection {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    background-color: $Beige;
+    font-family: "Open Sans";
+
+    .Container {
+        top: 20%;
+        width: 80%;
+        height: 100%;
+        @include CenterX;
+    }
+
+    hr {
+        top: 12%;
+        width: 20%;
+        height: .3vh;
+
+        @include CenterX;
+    }
+
+    .Title {
+        top: 5%;
+
+        @include CenterX;
+        text-align: center;
+        color: $Light-Brown;
+        @include HeaderSize;
+    }
+
+    .InfoContainer {
+        top: 5%;
+        @include RegularSize;
+        color: $Dark-Blue;
+    }
+
+    .MedTitle {
+        font-weight: 700;
+    }
+
+    .WhyTitle {
+        padding-top: 2%;
+    }
+
+}

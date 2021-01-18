@@ -42,9 +42,10 @@ html {
     src: url(/Assets/Fonts/Gastronomy-Flaticon.ttf);
 }
 
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+
+hr {
+    background-image: linear-gradient(to right, rgba(20, 54, 66, 0), rgba(20, 54, 66, 0.75), rgba(255, 255, 255, 0));
+}
 
