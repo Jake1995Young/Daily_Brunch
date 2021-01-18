@@ -407,6 +407,83 @@ hr {
 .Container:hover .slice {
   transform: translate(0, 0) rotate(0); }
 
+.PhotoSlider {
+  position: absolute;
+  top: 70%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+  .PhotoSlider img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    pointer-events: none; }
+  .PhotoSlider .slider-container {
+    max-width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative; }
+  .PhotoSlider .count-slides {
+    position: absolute;
+    z-index: 100;
+    bottom: 1%;
+    right: 0%;
+    font-size: 2rem; }
+  .PhotoSlider .dots {
+    position: absolute;
+    bottom: 1%;
+    left: 0%;
+    display: flex; }
+  .PhotoSlider .dots span {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #b76935;
+    opacity: .3;
+    margin-right: .5rem;
+    cursor: pointer;
+    transition: all .4s ease-in-out; }
+  .PhotoSlider .dots span.dots_active {
+    opacity: 1; }
+  .PhotoSlider .dots span:last-child {
+    margin-right: 0; }
+  .PhotoSlider .dots span:hover {
+    opacity: .6; }
+  .PhotoSlider .slider {
+    user-select: none;
+    transition: all .4s ease-in-out;
+    display: flex;
+    align-items: center;
+    transform: translateX(0);
+    will-change: transform; }
+  .PhotoSlider .slider .slider__item {
+    flex-shrink: 0;
+    width: 100%; }
+  .PhotoSlider .arrows {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%; }
+  .PhotoSlider .arrows__item {
+    cursor: pointer;
+    font-size: 3rem;
+    line-height: 1;
+    user-select: none;
+    display: inline-block;
+    margin: 0 1vh;
+    color: #6f523b; }
+  .PhotoSlider .count-slides {
+    color: #b76935;
+    margin-top: 2%; }
+  .PhotoSlider .slider-execution-line {
+    width: 100%;
+    height: 7px;
+    margin-top: 2%; }
+  .PhotoSlider .slider-execution-line__progress {
+    background: linear-gradient(to left, #b76935, #f7ece4);
+    width: 0%;
+    height: 100%;
+    transition: width .9s ease-in-out; }
+
 .NavBarSection {
   position: fixed;
   top: 0%;

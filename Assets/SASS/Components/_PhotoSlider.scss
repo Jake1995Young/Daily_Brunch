@@ -1,0 +1,110 @@
+.PhotoSlider {
+    position: absolute;
+    top: 70%;
+    @include CenterX;
+    
+    img {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        pointer-events: none;
+    }
+
+    .slider-container {
+        max-width: 50%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .count-slides {
+        position: absolute;
+        z-index: 100;
+        bottom: 1%;
+        right: 0%;
+        font-size: 2rem;
+    }
+
+    .dots {
+        position: absolute;
+        bottom: 1%;
+        left: 0%;
+        display: flex;
+    }
+    
+   
+
+    .dots span {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: $Light-Brown;
+        opacity: .3;
+        margin-right: .5rem;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+    }
+
+    .dots span.dots_active {
+        opacity: 1;
+    }
+
+    .dots span:last-child {
+        margin-right: 0;
+    }
+
+    .dots span:hover {
+        opacity: .6;
+    }
+
+    .slider {
+        user-select: none;
+        transition: all .4s ease-in-out;
+        display: flex;
+        align-items: center;
+        transform: translateX(0);
+        will-change: transform;
+    }
+
+    .slider .slider__item {
+        flex-shrink: 0;
+        width: 100%;
+    }
+
+    .slider__item:nth-child(even) {
+    }
+
+    .arrows {
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+    }
+
+    .arrows__item {
+        cursor: pointer;
+        font-size: 3rem;
+        line-height: 1;
+        user-select: none;
+        display: inline-block;
+        margin: 0 1vh;
+        color: $Dark-Brown;
+    }
+    
+    .count-slides{
+        color: $Light-Brown;
+        margin-top: 2%;
+    }
+
+    .slider-execution-line {
+        width: 100%;
+        height: 7px;
+        margin-top: 2%;
+    }
+
+    .slider-execution-line__progress {
+        background: linear-gradient(to left,$Light-Brown, $Beige);
+        width: 0%;
+        height: 100%;
+        transition: width .9s ease-in-out;
+    }
+}
