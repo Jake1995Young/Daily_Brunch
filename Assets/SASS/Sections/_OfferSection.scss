@@ -1,0 +1,68 @@
+.OfferSection {
+    position: relative;
+    height: 70vh;
+
+    background-color: $Beige;
+    text-align: center;
+    font-family: "Open Sans";
+
+    .Title {
+        color: $Light-Brown;
+        font-size: 6vh;
+    }
+
+    hr {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 20%;
+        border: 0;
+        height: 2px;
+        background-image: linear-gradient(to right, rgba(20, 54, 66, 0), rgba(20, 54, 66, 0.75), rgba(255, 255, 255, 0));
+    }
+
+    .Info {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2vh;
+        
+        width: 35%;
+    }
+
+    .OffersList {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        width: 60%;
+        height: 45%;
+
+        transform: translateX(-50%);
+    }
+
+    .Offers {
+        text-align: center;
+        color: $Dark-Blue;
+    }
+
+    .OfferIcon {
+        font-family: "Gastronomy-Flaticon";
+        font-style: normal;
+        font-size: 6vh;
+        color: $Light-Brown;
+    }
+
+    .OfferTitle {
+        padding: 2%;
+        font-weight: 700;
+    }
+
+    .OfferDesc {
+        padding: 2%;
+        font-size: 2vh;
+    }
+}

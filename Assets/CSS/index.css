@@ -29,8 +29,16 @@ html {
   src: url(/Assets/Fonts/LobsterTwo-Regular.ttf); }
 
 @font-face {
-  font-family: Flaticon;
-  src: url(/Assets/Fonts/Flaticon.ttf); }
+  font-family: Breakfast-Flaticon;
+  src: url(/Assets/Fonts/Breakfast-Flaticon.ttf); }
+
+@font-face {
+  font-family: Ion-Flaticon;
+  src: url(/Assets/Fonts/Ion-Flaticon.ttf); }
+
+@font-face {
+  font-family: Gastronomy-Flaticon;
+  src: url(/Assets/Fonts/Gastronomy-Flaticon.ttf); }
 
 /*Colours*/
 .NavBarSection {
@@ -39,15 +47,13 @@ html {
   width: 100%;
   height: 7%;
   z-index: 3;
-  background-color: #F7ECE4; }
-  .NavBarSection .BusinessLogo1 {
+  background-color: rgba(247, 236, 228, 0.7); }
+  .NavBarSection .BusinessLogo {
     position: absolute;
+    top: -15%;
     left: 15%;
-    font-size: 6vh;
-    color: #143642; }
-  .NavBarSection .BusinessLogo2 {
-    position: absolute;
-    left: 30.5%;
+    font-family: "Gastronomy-Flaticon";
+    font-style: normal;
     font-size: 6vh;
     color: #143642; }
   .NavBarSection .BusinessName {
@@ -63,41 +69,47 @@ html {
     width: 40%;
     list-style-type: none; }
   .NavBarSection .NavLink {
+    height: 10%;
     display: inline;
     font-size: 2.5vh;
     padding: 2.5%;
     font-family: LobsterTwo-Regular;
     color: #143642;
-    height: 10%;
     /*Slowly transition to button background*/
     transition-duration: .2s;
     transition-timing-function: ease-out; }
     .NavBarSection .NavLink:hover {
-      background: #143642;
-      color: #F7ECE4;
       /*Button Shape*/
       border-top-left-radius: 35px;
       border-top-right-radius: 15px;
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 35px;
-      transition-timing-function: ease-in; }
+      transition-timing-function: ease-in;
+      background: rgba(20, 54, 66, 0.7); }
+    .NavBarSection .NavLink:hover a {
+      color: #f7ece4; }
+    .NavBarSection .NavLink a {
+      text-decoration: none;
+      color: #143642; }
 
 .WelcomeSection {
   position: relative;
   height: 100vh;
-  background-color: #F7ECE4; }
+  background-color: #f7ece4; }
   .WelcomeSection .Main {
     position: absolute;
-    top: 7%;
+    top: 0%;
     width: 100%;
-    height: 70%;
+    height: 97%;
+    clip-path: polygon(0 0, 100% 0%, 100% 76%, 0% 100%);
+    text-align: center;
     background-image: linear-gradient(rgba(183, 105, 53, 0.5), rgba(20, 54, 66, 0.3)), url(/Assets/Images/FoodTable.jpg);
-    color: #F7ECE4;
+    color: #f7ece4;
     font-family: 'Open Sans', sans-serif; }
     .WelcomeSection .Main .Logo {
-      font-family: "Flaticon";
+      font-family: "Breakfast-Flaticon";
       position: absolute;
-      top: 15%;
+      top: 20%;
       left: 50%;
       font-size: 10vh;
       display: inline;
@@ -108,13 +120,90 @@ html {
       top: 35%;
       left: 50%;
       font-size: 5vh;
-      transform: translate(-50%, -50%); }
+      transform: translateX(-50%); }
     .WelcomeSection .Main .Slogan {
       position: absolute;
       top: 45%;
       left: 50%;
       font-size: 2vh;
-      transform: translate(-50%, -50%); }
+      transform: translateX(-50%); }
+    .WelcomeSection .Main .Button {
+      background: #b76935;
+      position: absolute;
+      top: 60%;
+      left: 0%;
+      color: #f7ece4;
+      cursor: pointer;
+      font-size: 2em;
+      padding: 1.5rem;
+      border: 0;
+      transition: all 0.5s;
+      border-radius: 10px;
+      width: auto;
+      position: relative; }
+      .WelcomeSection .Main .Button::after {
+        content: " \f30f";
+        font-family: "Ion-Flaticon";
+        font-weight: 400;
+        opacity: 0; }
+      .WelcomeSection .Main .Button:hover {
+        background: #143642;
+        transition: all 0.5s;
+        border-radius: 10px;
+        box-shadow: 0px 6px 15px #143642;
+        padding: 1.5rem 2rem 1.5rem 2rem; }
+        .WelcomeSection .Main .Button:hover::after {
+          opacity: 1;
+          transition: all 0.5s; }
+
+.OfferSection {
+  position: relative;
+  height: 70vh;
+  background-color: #f7ece4;
+  text-align: center;
+  font-family: "Open Sans"; }
+  .OfferSection .Title {
+    color: #b76935;
+    font-size: 6vh; }
+  .OfferSection hr {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 20%;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(20, 54, 66, 0), rgba(20, 54, 66, 0.75), rgba(255, 255, 255, 0)); }
+  .OfferSection .Info {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2vh;
+    width: 35%; }
+  .OfferSection .OffersList {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 60%;
+    height: 45%;
+    transform: translateX(-50%); }
+  .OfferSection .Offers {
+    text-align: center;
+    color: #143642; }
+  .OfferSection .OfferIcon {
+    font-family: "Gastronomy-Flaticon";
+    font-style: normal;
+    font-size: 6vh;
+    color: #b76935; }
+  .OfferSection .OfferTitle {
+    padding: 2%;
+    font-weight: 700; }
+  .OfferSection .OfferDesc {
+    padding: 2%;
+    font-size: 2vh; }
 
 /*Responsive Web Design - Max 1300px*/
 @media only screen and (max-width: 1300px) {

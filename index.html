@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="Assets/CSS/index.css">
     <link rel="stylesheet" type="text/css" href="Assets/Icons/ionicons-v2.0.1-master/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="Assets/Icons/BreakfastIcons/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="Assets/Icons/Gastronomy/font/flaticon.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <script src="Assets/Scripts/active-menu-link.js"></script>
 </head>
@@ -20,34 +22,54 @@
 <body>
     <section class="NavBarSection">
         <div class="LogoSection">
-            <i class="ion-fork BusinessLogo1"></i>
+            <i class="flaticon-185-cutlery BusinessLogo"></i>
             <h1 class="BusinessName">Daily Brunch</h1>
-            <span class="ion-knife BusinessLogo2"></span>
         </div>
         <ul class="NavBar">
-            <li class="NavLink active" href="#WelcomeSection">Welcome</li>
-            <li class="NavLink active" href="#OfferSection">We Offer</li>
-            <li class="NavLink active" href="#ShopSection">Our Shop</li>
-            <li class="NavLink active" href="#TeamSection">Our Team</li>
-            <li class="NavLink active" href="#ContactSection">Get in Touch</li>
+            <li class="NavLink active"><a  href="#WelcomeSection">Welcome</a></li>
+            <li class="NavLink active"><a  href="#OfferSection">We Offer</a></li>
+            <li class="NavLink active"><a  href="#ShopSection">Our Shop</a></li>
+            <li class="NavLink active"><a  href="#TeamSection">Our Team</a></li>
+            <li class="NavLink active"><a  href="#ContactSection">Get in Touch</a></li>
         </ul>
     </section>
 
     <section class="WelcomeSection" id="WelcomeSection">
-       
-       
         <div class="Main">
             <i class="Logo flaticon-001-breakfast"></i>
             <h1 class="Name">Daily Brunch</h1>
             <h2 class="Slogan">Everyday should be treated like a brunch day</h2>
+            <button class="Button">Today's Specials</button>
         </div>
     </section>
-    <section class="OfferSection" id="OfferSection"></section>
+    <section class="OfferSection" id="OfferSection">
+        <h1 class="Title">What We Offer</h1>
+        <p class="Info">We provide a wide selection of hearty meals, healthy meals, coffee, cocktails and everything in between</p>
+
+        <div class="OffersList row">
+            <div class="Offers col-sm-4">
+                <i class="OfferIcon flaticon-201-cup"></i>
+                <h2 class="OfferTitle">Coffee</h2>
+                <p class="OfferDesc">Keep caffeinated with our in-house roasted beans, imported from a fairtrade farm in the Columbian mountains</p>
+            </div>
+            <div class="Offers col-sm-4">
+                <i class="OfferIcon flaticon-124-chef"></i>
+                <h2 class="OfferTitle">Meals</h2>
+                <p class="OfferDesc">All our meals are made fresh to order, using only locally sourced produce, handcrafted by workld renowned chefs</p>
+            </div>
+            <div class="Offers col-sm-4">
+                <i class="OfferIcon flaticon-211-glass"></i>
+                <h2 class="OfferTitle">Cocktails</h2>
+                <p class="OfferDesc">Why not try one of our signature cocktails to kick off your day with a buzz, from sweet to sharp, we have one to suit you</p>
+            </div>
+        </div>
+        <hr>
+
+
+    </section>
     <section class="ShopSection" id="ShopSection"></section>
     <section class="TeamSection" id="TeamSection"></section>
     <section class="ContactSection" id="ContactSection"></section>
 </body>
 
 </html>
-
-

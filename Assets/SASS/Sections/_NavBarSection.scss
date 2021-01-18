@@ -3,23 +3,21 @@
     top: 0%;
     width: 100%;
     height: 7%;
-    
+
     z-index: 3;
-    background-color: $Beige;
+    background-color: rgba(247, 236, 228, .7);
 
-    .BusinessLogo1 {
+    .BusinessLogo {
         position: absolute;
+        top: -15%;
         left: 15%;
+
+        font-family: "Gastronomy-Flaticon";
+        font-style: normal;
         font-size: 6vh;
         color: $Dark-Blue;
     }
 
-    .BusinessLogo2 {
-        position: absolute;
-        left: 30.5%;
-        font-size: 6vh;
-        color: $Dark-Blue;
-    }
 
     .BusinessName {
         position: absolute;
@@ -40,28 +38,37 @@
     }
 
     .NavLink {
+        height: 10%;
+
         display: inline;
         font-size: 2.5vh;
         padding: 2.5%;
         font-family: LobsterTwo-Regular;
         color: $Dark-Blue;
-        height: 10%;
-        
+
         /*Slowly transition to button background*/
         transition-duration: .2s;
         transition-timing-function: ease-out;
 
         &:hover {
-            background: $Dark-Blue;
-            color: $Beige;
-            
             /*Button Shape*/
             border-top-left-radius: 35px;
             border-top-right-radius: 15px;
             border-bottom-left-radius: 15px;
             border-bottom-right-radius: 35px;
-            
+
             transition-timing-function: ease-in;
+            background: rgba(20, 54, 66, .7);
+            
+        }
+        
+        &:hover a{
+            color: $Beige;
+        }
+
+        a {
+            text-decoration: none;
+            color: $Dark-Blue;
         }
     }
 }
