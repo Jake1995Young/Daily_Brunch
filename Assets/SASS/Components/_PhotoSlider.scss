@@ -1,10 +1,6 @@
 .PhotoSlider {
-    position: absolute;
-    top: 70%;
-    @include CenterX;
-    
     img {
-        width: 100%;
+        max-width: 100%;
         max-width: 100%;
         display: block;
         pointer-events: none;

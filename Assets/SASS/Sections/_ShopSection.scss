@@ -1,13 +1,13 @@
 .ShopSection {
     position: relative;
     width: 100%;
-    height: 150vh;
+    height: 250vh;
 
     background-color: $Beige;
     font-family: "Open Sans";
 
     .Container {
-        top: 20%;
+        top: 15%;
         width: 80%;
         height: 100%;
 
@@ -15,7 +15,7 @@
     }
 
     hr {
-        top: 12%;
+        top: 10%;
         width: 20%;
         height: .3vh;
 
@@ -45,20 +45,41 @@
             padding-top: 2%;
         }
     }
-    
-    .SpecialsTitle{
-        top: 40%;
+
+    .SpecialsTitle {
+        top: 25%;
     }
-    
-    .SpecialsHR{
-        top: 47%;
+
+    .SpecialsHR {
+        top: 30%;
     }
-    
-    .SpecialsInfo{
+
+    .SpecialsInfo {
         @include CenterX;
         text-align: center;
-        top: 53%;
+        top: 35%;
         @include RegularSize;
         color: $Dark-Blue;
+    }
+
+    .CoffeeSlider {
+        position: absolute;
+        top: 60%;
+        left: 0%;
+        width: 40%;
+    }
+
+    .MealsSlider {
+        top: 74%;
+        @include CenterX;
+        width: 40%;
+
+    }
+
+    .CocktailsSlider {
+        position: absolute;
+        top: 60%;
+        right: 0%;
+        width: 40%;
     }
 }

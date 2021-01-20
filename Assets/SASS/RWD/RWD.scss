@@ -1,0 +1,46 @@
+/*Responsive Web Design - Max 1350px*/
+
+
+
+
+@media only screen and (max-width: 1350px) {
+    .NavBarSection {
+
+        /*RWD*/
+        .NavBar {
+            left: 55%;
+        }
+
+        .NavLink {
+            font-size: 2vh;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .NavBarSection {
+        height: 10%;
+
+        .BusinessLogo {
+            left: 2%;
+            top: 5%
+        }
+
+        .BusinessName {
+            left: 4%;
+            top: 20%;
+        }
+
+        /*RWD*/
+        .NavBar {
+            top: 45%;
+            width: 100%;
+            left: 40%;
+        }
+
+        .NavLink {
+            font-size: 2vh;
+        }
+    }
+}

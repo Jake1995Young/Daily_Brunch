@@ -7,7 +7,7 @@
 }
 
 .frame .slice {
-    width: calc(100% + 0.5px);
+    max-width: calc(100% + 0.5px);
     height: calc(100% + 0.5px);
     background-image: url(/Assets/Images/Restaurant.jpeg);
     background-size: 800% 800%;

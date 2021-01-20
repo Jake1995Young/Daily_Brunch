@@ -28,8 +28,6 @@
         color: $Dark-Blue;
     }
 
-
-
     .NavBar {
         position: relative;
         top: 25%;
@@ -52,39 +50,49 @@
         transition-duration: .2s;
         transition-timing-function: ease-out;
 
-        &:hover {
-            /*Button Shape*/
-            border-top-left-radius: 35px;
-            border-top-right-radius: 15px;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 35px;
-
-            transition-timing-function: ease-in;
-            background: rgba(20, 54, 66, .7);
-
-        }
-
-        &:hover a {
-            color: $Beige;
-        }
-
         a {
             text-decoration: none;
             color: $Dark-Blue;
         }
     }
 
-    
-    .active{
-        
+    .NavLink:hover {
         /*Button Shape*/
         border-top-left-radius: 35px;
         border-top-right-radius: 15px;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 35px;
 
-        background: rgba(183, 105, 53, .7);
-        display: inline;
+        transition-timing-function: ease-in;
+        background: rgba(20, 54, 66, .7);
         padding: 2%;
+        display: inline;
+        color: $Beige;
+
+        a {
+            color: $Beige;
+        }
+    }
+
+    .active {
+        /*Button Shape*/
+        border-top-left-radius: 35px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 35px;
+
+        transition-timing-function: ease-in;
+        background: rgba(183, 105, 53, .7);
+        padding: 2%;
+        display: inline;
+        color: $Beige;
+
+        a {
+            color: $Beige;
+        }
+    }
+
+    .active .NavLink.a {
+        color: $Beige;
     }
 }

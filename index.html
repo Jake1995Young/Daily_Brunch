@@ -20,7 +20,6 @@
 
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-
 </head>
 
 <body>
@@ -30,11 +29,11 @@
             <h1 class="BusinessName">Daily Brunch</h1>
         </div>
         <ul class="NavBar" id="NavBar">
-            <li class="NavLink"><a href="#WelcomeSection">Welcome</a></li>
-            <li class="NavLink"><a href="#OfferSection">We Offer</a></li>
-            <li class="NavLink"><a href="#ShopSection">Our Shop</a></li>
-            <li class="NavLink"><a href="#TeamSection">Our Team</a></li>
-            <li class="NavLink"><a href="#ContactSection">Get in Touch</a></li>
+            <li class="NavLink"><span><a href="#WelcomeSection">Welcome</a></span></li>
+            <li class="NavLink"><span><a href="#OfferSection">We Offer</a></span></li>
+            <li class="NavLink"><span><a href="#ShopSection">Our Shop</a></span></li>
+            <li class="NavLink"><span><a href="#TeamSection">Our Team</a></span></li>
+            <li class="NavLink"><span><a href="#ContactSection">Get in Touch</a></span></li>
         </ul>
     </section>
 
@@ -48,6 +47,7 @@
         </div>
     </section>
 
+   
     <section class="OfferSection" id="OfferSection">
         <h1 class="Title">What We Offer</h1>
         <p class="Info">We provide a wide selection of hearty meals, healthy meals, coffee, cocktails and everything in between</p>
@@ -163,20 +163,48 @@
             <p class="SpecialsInfo">Our special's get a revamp on the weekly. <br>We're not a fan of over using any meal, not matter how good it tastes! <br>So try one of ours now, while you can!</p>
         </div>
 
-        <div class="PhotoSlider">
-            <div class="slider-container your-class-1">
+        <div class="PhotoSlider CoffeeSlider">
+            <div class="slider-container Slider1">
                 <div class="slider">
                     <div class="slider__item">
-                        <img src="/Assets/Images/FoodTable.jpg" alt="">
+                        <img src="/Assets/Images/Coffee1.jpg" alt="">
                     </div>
                     <div class="slider__item">
-                        <img src="/Assets/Images/Restaurant.jpeg" alt="">
+                        <img src="/Assets/Images/Coffee2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="arrows">
+                    <span class="arrows__item">&#10096;</span>
+                    <span class="arrows__item">&#10097;</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="PhotoSlider MealsSlider">
+            <div class="slider-container Slider2">
+                <div class="slider">
+                    <div class="slider__item">
+                        <img src="/Assets/Images/Meal1.jpg" alt="">
                     </div>
                     <div class="slider__item">
-                        <img src="/Assets/Images/FoodTable.jpg" alt="">
+                        <img src="/Assets/Images/Meal2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="arrows">
+                    <span class="arrows__item">&#10096;</span>
+                    <span class="arrows__item">&#10097;</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="PhotoSlider CocktailsSlider">
+            <div class="slider-container Slider3">
+                <div class="slider">
+                    <div class="slider__item">
+                        <img src="/Assets/Images/Cocktail1.jpg" alt="">
                     </div>
                     <div class="slider__item">
-                        <img src="/Assets/Images/Restaurant.jpeg" alt="">
+                        <img src="/Assets/Images/Cocktail2.jpg" alt="">
                     </div>
                 </div>
                 <div class="arrows">

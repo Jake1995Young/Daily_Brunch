@@ -164,7 +164,22 @@ function slider(set) {
 }
 
 slider({
-    name: ".your-class-1",
+    name: ".Slider1",
+    dots: true,
+    numberSlid: true,
+    line: true
+});
+
+
+slider({
+    name: ".Slider2",
+    dots: true,
+    numberSlid: true,
+    line: true
+});
+
+slider({
+    name: ".Slider3",
     dots: true,
     numberSlid: true,
     line: true
