@@ -28,6 +28,8 @@
         color: $Dark-Blue;
     }
 
+
+
     .NavBar {
         position: relative;
         top: 25%;
@@ -42,7 +44,7 @@
 
         display: inline;
         font-size: 2.5vh;
-        padding: 2.5%;
+        padding: 2%;
         font-family: LobsterTwo-Regular;
         color: $Dark-Blue;
 
@@ -59,10 +61,10 @@
 
             transition-timing-function: ease-in;
             background: rgba(20, 54, 66, .7);
-            
+
         }
-        
-        &:hover a{
+
+        &:hover a {
             color: $Beige;
         }
 
@@ -70,5 +72,19 @@
             text-decoration: none;
             color: $Dark-Blue;
         }
+    }
+
+    
+    .active{
+        
+        /*Button Shape*/
+        border-top-left-radius: 35px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 35px;
+
+        background: rgba(183, 105, 53, .7);
+        display: inline;
+        padding: 2%;
     }
 }
