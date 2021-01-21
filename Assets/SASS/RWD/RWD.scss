@@ -1,7 +1,7 @@
 @media only screen and (max-width: 1350px) {
     .NavBarSection {
 
-        /*RWD*/
+        RWD
         .NavBar {
             left: 55%;
         }
@@ -18,12 +18,14 @@
 
         .BusinessLogo {
             left: 2%;
-            top: 5%
+            top: 5%;
+            font-size: 4vh;
         }
 
         .BusinessName {
             left: 5%;
-            top: 20%;
+            top: 10%;
+            font-size: 4vh;
         }
 
         .NavBar {
@@ -142,8 +144,8 @@
             width: 80%;
         }
         
-        .CoffeeSlider, .CocktailsSlider, .MealsSlider{
-            width: 150%;
+        .PhotoSlider{
+            width: 100%;
             @include CenterX;
         }
         

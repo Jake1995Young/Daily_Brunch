@@ -1,12 +1,15 @@
 .frame {
     display: grid;
     height: 40vh;
+    width: 100%;
     background: $Beige;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
 }
 
 .frame .slice {
+    width: 100%;
+    overflow: hidden;
     max-width: calc(100% + 0.5px);
     height: calc(100% + 0.5px);
     background-image: url(/Assets/Images/Restaurant.jpeg);
@@ -47,7 +50,7 @@
 .frame .slice:nth-of-type(6) {
     transition: all 1.94210824s;
     background-position: 71.42857143% 0%;
-    transform: translateX(25.66422853vw) translateY(23.88130899vh) rotate(0.12721814turn);
+    transform: translateX(1.66422853vw) translateY(23.88130899vh) rotate(0.12721814turn);
 }
 
 .frame .slice:nth-of-type(7) {
@@ -65,13 +68,13 @@
 .frame .slice:nth-of-type(9) {
     transition: all 1.6419607s;
     background-position: 0% 14.28571429%;
-    transform: translateX(40.06241558vw) translateY(-0.3431604vh) rotate(0.9662525turn);
+    transform: translateX(1.06241558vw) translateY(-0.3431604vh) rotate(0.9662525turn);
 }
 
 .frame .slice:nth-of-type(10) {
     transition: all 1.63615551s;
     background-position: 14.28571429% 14.28571429%;
-    transform: translateX(27.26025061vw) translateY(-20.28224768vh) rotate(0.42031273turn);
+    transform: translateX(1.26025061vw) translateY(-20.28224768vh) rotate(0.42031273turn);
 }
 
 .frame .slice:nth-of-type(11) {
@@ -83,37 +86,37 @@
 .frame .slice:nth-of-type(12) {
     transition: all 1.49633152s;
     background-position: 42.85714286% 14.28571429%;
-    transform: translateX(36.23634077vw) translateY(-14.80074767vh) rotate(0.48376615turn);
+    transform: translateX(1.23634077vw) translateY(-14.80074767vh) rotate(0.48376615turn);
 }
 
 .frame .slice:nth-of-type(13) {
     transition: all 1.02003387s;
     background-position: 57.14285714% 14.28571429%;
-    transform: translateX(36.38001251vw) translateY(13.64984582vh) rotate(0.08570719turn);
+    transform: translateX(1.38001251vw) translateY(13.64984582vh) rotate(0.08570719turn);
 }
 
 .frame .slice:nth-of-type(14) {
     transition: all 1.57295314s;
     background-position: 71.42857143% 14.28571429%;
-    transform: translateX(2.58699664vw) translateY(23.72993783vh) rotate(0.47424078turn);
+    transform: translateX(1.58699664vw) translateY(23.72993783vh) rotate(0.47424078turn);
 }
 
 .frame .slice:nth-of-type(15) {
     transition: all 1.91250591s;
     background-position: 85.71428571% 14.28571429%;
-    transform: translateX(49.09532579vw) translateY(16.2371503vh) rotate(0.6613552turn);
+    transform: translateX(1.09532579vw) translateY(16.2371503vh) rotate(0.6613552turn);
 }
 
 .frame .slice:nth-of-type(16) {
     transition: all 1.44475473s;
     background-position: 100% 14.28571429%;
-    transform: translateX(26.59218444vw) translateY(5.50075271vh) rotate(0.65866231turn);
+    transform: translateX(1.59218444vw) translateY(5.50075271vh) rotate(0.65866231turn);
 }
 
 .frame .slice:nth-of-type(17) {
     transition: all 1.30438035s;
     background-position: 0% 28.57142857%;
-    transform: translateX(36.5939286vw) translateY(-7.84688127vh) rotate(0.83216779turn);
+    transform: translateX(1.5939286vw) translateY(-7.84688127vh) rotate(0.83216779turn);
 }
 
 .frame .slice:nth-of-type(18) {
@@ -155,7 +158,7 @@
 .frame .slice:nth-of-type(24) {
     transition: all 1.39050383s;
     background-position: 100% 28.57142857%;
-    transform: translateX(4.54707874vw) translateY(10.23527599vh) rotate(0.74581951turn);
+    transform: translateX(1.54707874vw) translateY(10.23527599vh) rotate(0.74581951turn);
 }
 
 .frame .slice:nth-of-type(25) {
@@ -167,31 +170,31 @@
 .frame .slice:nth-of-type(26) {
     transition: all 1.80636703s;
     background-position: 14.28571429% 42.85714286%;
-    transform: translateX(41.65521962vw) translateY(-11.18391523vh) rotate(0.46056626turn);
+    transform: translateX(1.65521962vw) translateY(-11.18391523vh) rotate(0.46056626turn);
 }
 
 .frame .slice:nth-of-type(27) {
     transition: all 1.06673123s;
     background-position: 28.57142857% 42.85714286%;
-    transform: translateX(30.13567523vw) translateY(5.55015952vh) rotate(0.43962349turn);
+    transform: translateX(1.13567523vw) translateY(5.55015952vh) rotate(0.43962349turn);
 }
 
 .frame .slice:nth-of-type(28) {
     transition: all 1.70401041s;
     background-position: 42.85714286% 42.85714286%;
-    transform: translateX(9.96513801vw) translateY(-2.31507808vh) rotate(0.00900149turn);
+    transform: translateX(1.96513801vw) translateY(-2.31507808vh) rotate(0.00900149turn);
 }
 
 .frame .slice:nth-of-type(29) {
     transition: all 1.25407233s;
     background-position: 57.14285714% 42.85714286%;
-    transform: translateX(16.89622291vw) translateY(13.75338538vh) rotate(0.52415108turn);
+    transform: translateX(1.89622291vw) translateY(13.75338538vh) rotate(0.52415108turn);
 }
 
 .frame .slice:nth-of-type(30) {
     transition: all 1.03566245s;
     background-position: 71.42857143% 42.85714286%;
-    transform: translateX(49.84148073vw) translateY(-13.3650732vh) rotate(0.15195237turn);
+    transform: translateX(1.84148073vw) translateY(-13.3650732vh) rotate(0.15195237turn);
 }
 
 .frame .slice:nth-of-type(31) {
@@ -203,7 +206,7 @@
 .frame .slice:nth-of-type(32) {
     transition: all 1.20045459s;
     background-position: 100% 42.85714286%;
-    transform: translateX(38.51633538vw) translateY(1.7587146vh) rotate(0.18729153turn);
+    transform: translateX(1.51633538vw) translateY(1.7587146vh) rotate(0.18729153turn);
 }
 
 .frame .slice:nth-of-type(33) {
@@ -221,19 +224,19 @@
 .frame .slice:nth-of-type(35) {
     transition: all 1.40657392s;
     background-position: 28.57142857% 57.14285714%;
-    transform: translateX(7.52522756vw) translateY(-10.20551508vh) rotate(0.20884155turn);
+    transform: translateX(1.52522756vw) translateY(-10.20551508vh) rotate(0.20884155turn);
 }
 
 .frame .slice:nth-of-type(36) {
     transition: all 1.61723863s;
     background-position: 42.85714286% 57.14285714%;
-    transform: translateX(23.17593173vw) translateY(3.54196856vh) rotate(0.27223211turn);
+    transform: translateX(1.17593173vw) translateY(3.54196856vh) rotate(0.27223211turn);
 }
 
 .frame .slice:nth-of-type(37) {
     transition: all 1.11033839s;
     background-position: 57.14285714% 57.14285714%;
-    transform: translateX(5.06167427vw) translateY(-0.84886003vh) rotate(0.52077978turn);
+    transform: translateX(1.06167427vw) translateY(-0.84886003vh) rotate(0.52077978turn);
 }
 
 .frame .slice:nth-of-type(38) {
@@ -251,31 +254,31 @@
 .frame .slice:nth-of-type(40) {
     transition: all 1.63156855s;
     background-position: 100% 57.14285714%;
-    transform: translateX(49.38777305vw) translateY(12.14019586vh) rotate(0.17324131turn);
+    transform: translateX(1.38777305vw) translateY(12.14019586vh) rotate(0.17324131turn);
 }
 
 .frame .slice:nth-of-type(41) {
     transition: all 1.32678041s;
     background-position: 0% 71.42857143%;
-    transform: translateX(27.33388813vw) translateY(24.12162679vh) rotate(0.5240682turn);
+    transform: translateX(1.33388813vw) translateY(24.12162679vh) rotate(0.5240682turn);
 }
 
 .frame .slice:nth-of-type(42) {
     transition: all 1.24001721s;
     background-position: 14.28571429% 71.42857143%;
-    transform: translateX(11.8454712vw) translateY(4.150374vh) rotate(0.31620042turn);
+    transform: translateX(1.8454712vw) translateY(4.150374vh) rotate(0.31620042turn);
 }
 
 .frame .slice:nth-of-type(43) {
     transition: all 1.77011597s;
     background-position: 28.57142857% 71.42857143%;
-    transform: translateX(17.10197023vw) translateY(-12.6285534vh) rotate(0.03213604turn);
+    transform: translateX(1.10197023vw) translateY(-12.6285534vh) rotate(0.03213604turn);
 }
 
 .frame .slice:nth-of-type(44) {
     transition: all 1.99713883s;
     background-position: 42.85714286% 71.42857143%;
-    transform: translateX(5.67749115vw) translateY(4.00492487vh) rotate(0.50825877turn);
+    transform: translateX(1.67749115vw) translateY(4.00492487vh) rotate(0.50825877turn);
 }
 
 .frame .slice:nth-of-type(45) {
@@ -287,7 +290,7 @@
 .frame .slice:nth-of-type(46) {
     transition: all 1.41169179s;
     background-position: 71.42857143% 71.42857143%;
-    transform: translateX(12.78898337vw) translateY(-11.49444252vh) rotate(0.55387418turn);
+    transform: translateX(2.78898337vw) translateY(-11.49444252vh) rotate(0.55387418turn);
 }
 
 .frame .slice:nth-of-type(47) {
@@ -299,7 +302,7 @@
 .frame .slice:nth-of-type(48) {
     transition: all 1.36681243s;
     background-position: 100% 71.42857143%;
-    transform: translateX(19.51093709vw) translateY(-15.26901802vh) rotate(0.8829494turn);
+    transform: translateX(1.51093709vw) translateY(-15.26901802vh) rotate(0.8829494turn);
 }
 
 .frame .slice:nth-of-type(49) {
@@ -323,13 +326,13 @@
 .frame .slice:nth-of-type(52) {
     transition: all 1.88299991s;
     background-position: 42.85714286% 85.71428571%;
-    transform: translateX(15.18864892vw) translateY(-16.30906815vh) rotate(0.99158173turn);
+    transform: translateX(1.18864892vw) translateY(-16.30906815vh) rotate(0.99158173turn);
 }
 
 .frame .slice:nth-of-type(53) {
     transition: all 1.53405613s;
     background-position: 57.14285714% 85.71428571%;
-    transform: translateX(26.81898456vw) translateY(21.61152742vh) rotate(0.66723162turn);
+    transform: translateX(1.81898456vw) translateY(21.61152742vh) rotate(0.66723162turn);
 }
 
 .frame .slice:nth-of-type(54) {
@@ -341,7 +344,7 @@
 .frame .slice:nth-of-type(55) {
     transition: all 1.05719504s;
     background-position: 85.71428571% 85.71428571%;
-    transform: translateX(3.03918171vw) translateY(0.94839366vh) rotate(0.39805226turn);
+    transform: translateX(1.03918171vw) translateY(0.94839366vh) rotate(0.39805226turn);
 }
 
 .frame .slice:nth-of-type(56) {
@@ -353,7 +356,7 @@
 .frame .slice:nth-of-type(57) {
     transition: all 1.93940218s;
     background-position: 0% 100%;
-    transform: translateX(7.11884701vw) translateY(-0.89182795vh) rotate(0.08854091turn);
+    transform: translateX(1.11884701vw) translateY(-0.89182795vh) rotate(0.08854091turn);
 }
 
 .frame .slice:nth-of-type(58) {
@@ -394,8 +397,8 @@
 
 .frame .slice:nth-of-type(64) {
     transition: all 1.45527398s;
-    background-position: 100% 100%;
-    transform: translateX(23.43588897vw) translateY(1.37567689vh) rotate(0.27672714turn);
+    background-position: 80% 80%;
+    transform: translateX(1.43588897vw) translateY(1.37567689vh) rotate(0.27672714turn);
 }
 
 .Container:hover .slice {
