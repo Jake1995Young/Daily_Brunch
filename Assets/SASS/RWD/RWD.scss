@@ -1,8 +1,3 @@
-/*Responsive Web Design - Max 1350px*/
-
-
-
-
 @media only screen and (max-width: 1350px) {
     .NavBarSection {
 
@@ -17,7 +12,6 @@
     }
 }
 
-
 @media only screen and (max-width: 1100px) {
     .NavBarSection {
         height: 10%;
@@ -28,19 +22,142 @@
         }
 
         .BusinessName {
-            left: 4%;
+            left: 5%;
             top: 20%;
         }
 
-        /*RWD*/
         .NavBar {
-            top: 45%;
+            top: 70%;
             width: 100%;
-            left: 40%;
+            @include CenterX;
         }
 
         .NavLink {
-            font-size: 2vh;
+            font-size: 1.7vh;
         }
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .WelcomeSection {
+        .Main {
+            .Logo {
+                font-size: 8vh;
+            }
+
+            .Name {
+                font-size: 4vh;
+            }
+
+            .Slogan {
+                top: 47%;
+            }
+
+            .SpecialsButton {
+                top: 80%;
+            }
+        }
+    }
+
+    .OfferSection {
+        height: 125vh;
+        
+        .Title {
+            font-size: 4vh;
+        }
+        
+        hr{
+            top: 5%;
+        }
+
+        .Info {
+            top: 10%;
+            font-size: 2vh;
+            width: 80%;
+        }
+        
+        .OffersList{
+            top: 20%;
+        }
+        
+        .Offers{
+            padding-top: 5%;
+        }
+    }
+
+    .PageDividerSection{
+        .Info{
+            top: 30%;
+            font-size: 1.7vh;
+        }
+        
+        .ReserveBtn{
+            @include CenterX;
+        }
+    }
+    
+    .ShopSection{
+        .Title {
+            top: 2.5%;
+            font-size: 4vh;
+        }
+        
+        hr{
+            top: 7%;
+        }
+        
+        .Container{
+            top: 10%;
+            left: 53%;
+        }
+        
+        .frame{
+            height: 30vh;
+            width: 37vh;
+        }
+        
+        .InfoContainer{
+            top: -35%;
+        }
+        
+        .MedTitle{
+          font-size: 3vh;  
+        }
+        
+        .Info{
+            font-size: 1.7vh;
+        }
+        
+        .SpecialsTitle{
+            top: 30%;
+        }
+        
+        .SpecialsHR{
+            top: 35%;
+        }
+        
+        .SpecialsInfo{
+            top: 37%;
+            font-size: 1.7vh;
+            width: 80%;
+        }
+        
+        .CoffeeSlider, .CocktailsSlider, .MealsSlider{
+            width: 150%;
+            @include CenterX;
+        }
+        
+        .CoffeeSlider{
+            top: 55%
+        }
+        
+        .MealsSlider{
+            top: 70%;
+        }
+        .CocktailsSlider{
+            top: 85%
+        }
+        
+        
     }
 }
