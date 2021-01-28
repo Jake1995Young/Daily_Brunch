@@ -702,8 +702,8 @@ hr {
   .ShopSection .SpecialCardContainer {
     position: absolute;
     top: 60%;
-    height: 20%;
-    width: 100%; }
+    width: 100%;
+    height: 20%; }
   .ShopSection .SpecialCard {
     width: 30%;
     height: 100%;
@@ -852,21 +852,8 @@ hr {
   .ShopSection .Info {
     font-size: 1.7vh; }
   .ShopSection .SpecialsTitle {
-    top: 30%; }
-  .ShopSection .SpecialsHR {
-    top: 35%; }
+    top: 40%; }
   .ShopSection .SpecialsInfo {
-    top: 37%;
-    font-size: 1.7vh;
-    width: 80%; }
-  .ShopSection .PhotoSlider {
-    width: 100%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%); }
-  .ShopSection .CoffeeSlider {
-    top: 55%; }
-  .ShopSection .MealsSlider {
-    top: 70%; }
-  .ShopSection .CocktailsSlider {
-    top: 85%; } }
+    top: 48%; }
+  .ShopSection .SpecialCard {
+    width: 100%; } }

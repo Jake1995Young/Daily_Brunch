@@ -131,34 +131,18 @@
         }
         
         .SpecialsTitle{
-            top: 30%;
-        }
-        
-        .SpecialsHR{
-            top: 35%;
+            top: 40%;
         }
         
         .SpecialsInfo{
-            top: 37%;
-            font-size: 1.7vh;
-            width: 80%;
+            top: 48%;
         }
         
-        .PhotoSlider{
+        .SpecialCard{
             width: 100%;
-            @include CenterX;
         }
+       
         
-        .CoffeeSlider{
-            top: 55%
-        }
-        
-        .MealsSlider{
-            top: 70%;
-        }
-        .CocktailsSlider{
-            top: 85%
-        }
         
         
     }
