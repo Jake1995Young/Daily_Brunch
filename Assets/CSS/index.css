@@ -688,33 +688,66 @@ hr {
     .ShopSection .InfoContainer .WhyTitle {
       padding-top: 2%; }
   .ShopSection .SpecialsTitle {
-    top: 25%; }
+    top: 40%; }
   .ShopSection .SpecialsHR {
-    top: 30%; }
+    top: 45%; }
   .ShopSection .SpecialsInfo {
+    top: 50%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    top: 35%;
     font-size: 2vh;
     color: #143642; }
-  .ShopSection .CoffeeSlider {
+  .ShopSection .SpecialCardContainer {
     position: absolute;
     top: 60%;
-    left: 0%;
-    width: 40%; }
-  .ShopSection .MealsSlider {
-    top: 74%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40%; }
-  .ShopSection .CocktailsSlider {
-    position: absolute;
-    top: 60%;
-    right: 0%;
-    width: 40%; }
+    height: 20%;
+    width: 100%; }
+  .ShopSection .SpecialCard {
+    width: 30%;
+    height: 100%;
+    margin: 2% 5% 2% 5%;
+    box-shadow: 0 1.5rem 4rem rgba(20, 54, 66, 0.75);
+    border-radius: 20px;
+    background-color: #143642;
+    overflow: hidden; }
+    .ShopSection .SpecialCard img {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+      opacity: .5;
+      clip-path: polygon(0 0, 100% 0, 100% 60%, 0 75%); }
+    .ShopSection .SpecialCard .MoreBtn {
+      position: absolute;
+      top: 75%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 1; }
+      .ShopSection .SpecialCard .MoreBtn:hover {
+        background: #f7ece4;
+        color: #143642; }
+    .ShopSection .SpecialCard .ColInfoTitle {
+      position: absolute;
+      font-family: "Gastronomy-Flaticon";
+      color: #f7ece4;
+      font-size: 4vh;
+      margin: 5%; }
+    .ShopSection .SpecialCard .ColInfoIcon {
+      position: absolute;
+      top: 25%;
+      width: auto;
+      height: auto;
+      font-family: "Gastronomy-Flaticon";
+      color: #f7ece4;
+      font-size: 10vh;
+      font-style: normal;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); }
 
 .PageDividerSection {
   position: relative;
@@ -738,7 +771,7 @@ hr {
     color: #143642; }
   .PageDividerSection .BubbleDivider {
     position: absolute;
-    top: 90%;
+    top: 85%;
     height: 5vh;
     width: 100%;
     background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(#143642), color-stop(0.49, #143642), color-stop(0.51, #f7ece4), to(#f7ece4));
