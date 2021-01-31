@@ -169,21 +169,21 @@
                     <img src="/Assets/Images/Coffee3.jpg" alt="Meal Image">
                     <h1 class="ColInfoTitle">Flat White</h1>
                     <i class="ColInfoIcon flaticon-201-cup"></i>
-                    <button class="Button MoreBtn">See More</button>
+                    <button class="SeeMoreBtn1"><a href="#SpecialsPopup" class="Button MoreBtn">See More</a></button>
                 </div>
 
                 <div class="SpecialCard col-sm">
                     <img src="/Assets/Images/Meal3.jpg" alt="Meal Image">
                     <h1 class="ColInfoTitle">Sunday Fruit Salad</h1>
                     <i class="ColInfoIcon flaticon-124-chef"></i>
-                    <button class="Button MoreBtn">See More</button>
+                    <button class="SeeMoreBtn2"><a href="#SpecialsPopup" class="Button MoreBtn">See More</a></button>
                 </div>
 
                 <div class="SpecialCard col-sm">
                     <img src="/Assets/Images/Cocktail1.jpg" alt="Meal Image">
-                    <h1 class="ColInfoTitle col">Strawberry Belini</h1>
+                    <h1 class="ColInfoTitle col">Strawberry Bellini</h1>
                     <i class="ColInfoIcon flaticon-211-glass col"></i>
-                    <button class="Button MoreBtn">See More</button>
+                    <button class="SeeMoreBtn3"><a href="#SpecialsPopup" class="Button MoreBtn">See More</a></button>
                 </div>
             </div>
         </div>
@@ -191,8 +191,26 @@
     <section class="TeamSection" id="TeamSection"></section>
     <section class="ContactSection" id="ContactSection1"></section>
 
+    <div class="SpecialsPopup" id="SpecialsPopup">
+        <div class="modal Popup">
+            <div class="PopupContainer">
+                <div class="InfoPopup">
+                    <h1 class="Title" id="PopupTitle">Flat White</h1>
+                    <p class="Info" id="PopupInfo">An espresso classic built from two ristretto shots for a slightly sweeter finish with velvety steamed whole milk</p>
+                    <a href="#S" class="Button OrderBtn">Place Order</a>
+                    <i class="ion-close-round CloseBtn"></i>
+                </div>
+
+                <div class="BGPopup">
+                    <img id="PopupImg" src="/Assets/Images/Cocktail1.jpg" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </div>
 
     <!--JS Links-->
+    <script src="Assets/Scripts/SpecialPopup.js"></script>
     <script src="Assets/Scripts/Slider.js"></script>
     <script src="Assets/Scripts/NavBarHighlighter.js"></script>
 </body>

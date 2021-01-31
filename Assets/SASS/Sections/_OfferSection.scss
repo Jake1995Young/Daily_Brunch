@@ -54,6 +54,6 @@
 
     .OfferDesc {
         @include RegularPadding;
-        font-size: 2vh;
+        @include RegularSize;
     }
 }

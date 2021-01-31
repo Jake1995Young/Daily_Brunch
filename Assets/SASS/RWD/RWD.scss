@@ -1,7 +1,5 @@
 @media only screen and (max-width: 1350px) {
     .NavBarSection {
-
-        RWD
         .NavBar {
             left: 55%;
         }
@@ -32,10 +30,10 @@
             top: 70%;
             width: 100%;
             @include CenterX;
-        }
 
-        .NavLink {
-            font-size: 1.7vh;
+            .NavLink {
+                font-size: 1.7vh;
+            }
         }
     }
 }
@@ -63,12 +61,12 @@
 
     .OfferSection {
         height: 125vh;
-        
+
         .Title {
             font-size: 4vh;
         }
-        
-        hr{
+
+        hr {
             top: 5%;
         }
 
@@ -77,73 +75,98 @@
             font-size: 2vh;
             width: 80%;
         }
-        
-        .OffersList{
+
+        .OffersList {
             top: 20%;
-        }
-        
-        .Offers{
-            padding-top: 5%;
+
+            .Offers {
+                padding-top: 5%;
+
+                .OfferDesc {
+                    font-size: 2vh;
+                }
+            }
         }
     }
 
-    .PageDividerSection{
-        .Info{
+    .PageDividerSection {
+        .Info {
             top: 30%;
             font-size: 1.7vh;
         }
-        
-        .ReserveBtn{
+
+        .ReserveBtn {
             @include CenterX;
         }
     }
-    
-    .ShopSection{
+
+
+    .ShopSection {
         .Title {
             top: 2.5%;
             font-size: 4vh;
         }
-        
-        hr{
+
+        hr {
             top: 7%;
         }
-        
-        .Container{
+
+        .Container {
             top: 10%;
             left: 53%;
+
+            .frame {
+                height: 30vh;
+                width: 37vh;
+            }
+
+            .InfoContainer {
+                top: -35%;
+            }
+
+            .MedTitle {
+                font-size: 3vh;
+            }
+
+            .Info {
+                font-size: 1.7vh;
+            }
         }
-        
-        .frame{
-            height: 30vh;
-            width: 37vh;
-        }
-        
-        .InfoContainer{
-            top: -35%;
-        }
-        
-        .MedTitle{
-          font-size: 3vh;  
-        }
-        
-        .Info{
-            font-size: 1.7vh;
-        }
-        
-        .SpecialsTitle{
+
+        .SpecialsTitle {
             top: 40%;
         }
-        
-        .SpecialsInfo{
+
+        .SpecialsInfo {
             top: 48%;
+            font-size: 2vh;
         }
-        
-        .SpecialCard{
-            width: 100%;
+
+
+        .SpecialCardContainer {
+            @include CenterX;
+            width: 60%;
+            height: 10%;
+
+            .SpecialCard {
+                width: 100%;
+
+                .ColInfoTitle {
+                    font-size: 3vh;
+                }
+
+                .ColInfoIcon {
+                    font-size: 6vh;
+                }
+
+                .Button {
+                    top: 75%;
+                    text-align: center;
+                    width: 70%;
+                    height: 20%;
+                    font-size: 2vh;
+                }
+            }
         }
-       
-        
-        
-        
     }
 }
