@@ -425,7 +425,7 @@ hr {
   /*Hide popup until needed*/
   visibility: hidden; }
   .SpecialsPopup .Popup .PopupContainer {
-    max-width: 50%;
+    max-width: 85%;
     width: 100%;
     height: 70%;
     border-radius: 10px;
@@ -439,7 +439,7 @@ hr {
     .SpecialsPopup .Popup .PopupContainer .InfoPopup {
       transition-duration: 0.5s;
       transform: translateY(80px);
-      background: linear-gradient(135deg, rgba(247, 236, 228, 0.3) 0%, rgba(20, 54, 66, 0.4) 76%);
+      background: linear-gradient(135deg, rgba(247, 236, 228, 0.4) 0%, rgba(20, 54, 66, 0.5) 76%);
       position: absolute;
       left: 0%;
       top: 0%;
@@ -673,7 +673,7 @@ hr {
 .ShopSection {
   position: relative;
   width: 100%;
-  height: 250vh;
+  height: 200vh;
   background: linear-gradient(180deg, rgba(247, 236, 228, 0.3) 0%, rgba(183, 105, 53, 0.6) 50%, rgba(111, 82, 59, 0.6) 100%);
   font-family: "Open Sans"; }
   .ShopSection .Container {
@@ -756,7 +756,10 @@ hr {
       font-family: "Open Sans";
       color: #f7ece4;
       font-size: 4vh;
-      margin: 5%; }
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center; }
     .ShopSection .SpecialCard .ColInfoIcon {
       position: absolute;
       top: 25%;
@@ -769,6 +772,56 @@ hr {
       position: absolute;
       left: 50%;
       transform: translateX(-50%); }
+
+.TeamSection {
+  position: relative;
+  height: 85vh;
+  background-color: #143642;
+  text-align: center;
+  font-family: "Open Sans"; }
+  .TeamSection .Title {
+    position: absolute;
+    top: 10%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #b76935;
+    font-size: 6vh; }
+  .TeamSection hr {
+    top: 25%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: .3vh;
+    background-image: linear-gradient(to right, rgba(247, 236, 228, 0), rgba(247, 236, 228, 0.75), rgba(111, 82, 59, 0));
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+  .TeamSection .Info {
+    top: 35%;
+    width: 50%;
+    color: #f7ece4;
+    font-size: 2.6vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+  .TeamSection .ChefsContainer {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    background-color: orange; }
+    .TeamSection .ChefsContainer .Chef {
+      background-color: antiquewhite;
+      position: relative;
+      width: 33.3%; }
+      .TeamSection .ChefsContainer .Chef .ChefImg {
+        position: absolute;
+        width: 5%;
+        height: 20%; }
 
 .PageDividerSection {
   position: relative;
@@ -880,14 +933,18 @@ hr {
     font-size: 2vh; }
   .ShopSection .SpecialCardContainer {
     position: absolute;
-    left: 50%;
+    left: 55%;
     transform: translateX(-50%);
-    width: 60%;
+    width: 75%;
     height: 10%; }
     .ShopSection .SpecialCardContainer .SpecialCard {
       width: 100%; }
       .ShopSection .SpecialCardContainer .SpecialCard .ColInfoTitle {
-        font-size: 3vh; }
+        font-size: 3vh;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%; }
       .ShopSection .SpecialCardContainer .SpecialCard .ColInfoIcon {
         font-size: 6vh; }
       .ShopSection .SpecialCardContainer .SpecialCard .Button {
@@ -895,4 +952,22 @@ hr {
         text-align: center;
         width: 70%;
         height: 20%;
-        font-size: 2vh; } }
+        font-size: 2vh; }
+  .SpecialsPopup .Popup .PopupContainer .InfoPopup .Title {
+    top: 5%;
+    left: 5%;
+    width: 75%;
+    font-size: 4vh; }
+  .SpecialsPopup .Popup .PopupContainer .InfoPopup .Info {
+    top: 25%;
+    left: 5%;
+    font-size: 2vh;
+    width: 90%;
+    color: #143642; }
+  .SpecialsPopup .Popup .PopupContainer .InfoPopup .OrderBtn {
+    top: 50%;
+    left: 5%; }
+  .SpecialsPopup .Popup .PopupContainer .InfoPopup .CloseBtn {
+    left: 85%; }
+  .SpecialsPopup .Popup .PopupContainer .BGPopup {
+    clip-path: polygon(100% 40%, 100% 100%, 0 100%, 0% 75%); } }

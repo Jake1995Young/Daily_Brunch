@@ -29,7 +29,9 @@
         .NavBar {
             top: 70%;
             width: 100%;
-            @include CenterX;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
 
             .NavLink {
                 font-size: 1.7vh;
@@ -37,6 +39,8 @@
         }
     }
 }
+
+
 
 @media only screen and (max-width: 950px) {
     .WelcomeSection {
@@ -56,6 +60,7 @@
             .SpecialsButton {
                 top: 80%;
             }
+
         }
     }
 
@@ -96,7 +101,9 @@
         }
 
         .ReserveBtn {
-            @include CenterX;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 
@@ -144,8 +151,10 @@
 
 
         .SpecialCardContainer {
-            @include CenterX;
-            width: 60%;
+            position: absolute;
+            left: 55%;
+            transform: translateX(-50%);
+            width: 75%;
             height: 10%;
 
             .SpecialCard {
@@ -153,6 +162,10 @@
 
                 .ColInfoTitle {
                     font-size: 3vh;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 100%;
                 }
 
                 .ColInfoIcon {
@@ -165,6 +178,42 @@
                     width: 70%;
                     height: 20%;
                     font-size: 2vh;
+                }
+            }
+        }
+    }
+
+    .SpecialsPopup {
+        .Popup {
+            .PopupContainer {
+                .InfoPopup {
+                    .Title {
+                        top: 5%;
+                        left: 5%;
+                        width: 75%;
+                        font-size: 4vh;
+                    }
+
+                    .Info {
+                        top: 25%;
+                        left: 5%;
+                        font-size: 2vh;
+                        width: 90%;
+                        color: #143642;
+                    }
+
+                    .OrderBtn {
+                        top: 50%;
+                        left: 5%;
+                    }
+
+                    .CloseBtn {
+                        left: 85%;
+                    }
+                }
+
+                .BGPopup {
+                    clip-path: polygon(100% 40%, 100% 100%, 0 100%, 0% 75%);
                 }
             }
         }

@@ -1,7 +1,7 @@
 .ShopSection {
     position: relative;
     width: 100%;
-    height: 250vh;
+    height: 200vh;
 
     background: linear-gradient(180deg, rgba(247, 236, 228, .3) 0%, rgba(183, 105, 53, .6) 50%, rgba(111, 82, 59, .6) 100%);
     font-family: "Open Sans";
@@ -111,7 +111,8 @@
             font-family: "Open Sans";
             color: $Beige;
             font-size: 4vh;
-            margin: 5%;
+            @include CenterX;
+            text-align: center;
         }
 
         .ColInfoIcon {

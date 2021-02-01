@@ -1,0 +1,66 @@
+.TeamSection {
+    position: relative;
+    height: 85vh;
+    background-color: $Dark-Blue;
+
+    text-align: center;
+    font-family: "Open Sans";
+
+    .Title {
+        position: absolute;
+        top: 10%;
+        @include CenterX;
+        color: $Light-Brown;
+        @include HeaderSize;
+    }
+
+    hr {
+        top: 25%;
+        @include CenterX;
+        width: 20%;
+        height: .3vh;
+        background-image: linear-gradient(to right, rgba(247,236,228, 0), rgba(247,236,228, 0.75), rgba(111, 82, 59, 0));
+
+        @include CenterX;
+    }
+
+    .Info {
+        top: 35%;
+        width: 50%;
+        color: $Beige;
+        font-size: 2.6vh;
+        @include CenterX;
+    }
+    
+    .ChefsContainer{
+        width: 50%;
+        @include CenterFix;
+        position: relative;
+        background-color: orange;
+        .Chef{
+            background-color: antiquewhite;
+            position: relative;
+            width: 33.3%;
+            .ChefImg{
+                position: absolute;
+                width: 5%;
+                height: 20%;
+            }
+            
+            .ChefName{
+                
+            }
+            
+            .ChefDesc{
+                
+            }
+            
+            .Socials{
+                i{
+                    
+                }
+            }
+        }
+    }
+
+}
