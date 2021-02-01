@@ -43,7 +43,7 @@
             <i class="Logo flaticon-001-breakfast"></i>
             <h1 class="Name">Daily Brunch</h1>
             <h2 class="Slogan">Everyday should be treated like a brunch day</h2>
-            <button class="Button SpecialsBtn">Today's Specials</button>
+            <a href="#SpecialsSection" class="Button SpecialsBtn">Today's Specials</a>
         </div>
     </section>
 
@@ -76,7 +76,7 @@
 
     <section class="PageDividerSection">
         <p class="Info">Why wait!<br>Place your booking now to be the first to brunch at our state of the art restaurant </p>
-        <button class="Button ReserveBtn">Let's Go</button>
+        <a href="#ContactSection" class="Button ReserveBtn">Let's Go</a>
         <div class="BubbleDivider"></div>
     </section>
 
@@ -159,7 +159,7 @@
             </div>
         </div>
 
-        <h1 class="Title SpecialsTitle">Our Special's</h1>
+        <h1 id="SpecialsSection" class="Title SpecialsTitle">Our Special's</h1>
         <hr class="SpecialsHR">
         <p class="SpecialsInfo">Our special's get a revamp on the weekly. <br>We're not a fan of over using any meal, not matter how good it tastes! <br>So try one of ours now, while you can!</p>
 
@@ -191,10 +191,10 @@
     <section class="TeamSection" id="TeamSection">
         <h1 class="Title">Meet our Kitchen</h1>
         <hr>
-        <p class="Info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eligendi ad, eveniet ut magni iure aliquid sapiente repellendus ipsum. Ducimus dolor magni quasi provident, et. Fuga porro voluptatum deserunt quisquam?</p>
+        <p class="Info">This our team of three staff, combined we have 45 years of culinery experience which can be effectively seen in our signature dishes and weekly specials. Please fee free to reach out at any time, if you find something we can improve upon</p>
         <div class="ChefsContainer row">
             <div class="Chef col-sm-4">
-                <!--<img src="/Assets/Images/profile1.jpg" alt="ChefProfile" class="ChefImg">-->
+                <img src="/Assets/Images/profile1.jpg" alt="ChefProfile" class="ChefImg">-
                 <h2 class="ChefName">Chris</h2>
                 <p class="ChefDesc">Pastry Chef</p>
                 <div class="Socials row">
@@ -204,7 +204,7 @@
                 </div>
             </div>
             <div class="Chef col-sm-4">
-                <!--<img src="/Assets/Images/profile2.jpg" alt="ChefProfile" class="ChefImg">-->
+                <img src="/Assets/Images/profile2.jpg" alt="ChefProfile" class="ChefImg">
                 <h2 class="ChefName">Cherie</h2>
                 <p class="ChefDesc">Sous Chef</p>
                 <div class="Socials row">
@@ -212,9 +212,9 @@
                     <i class="col ion-social-instagram"></i>
                     <i class="col ion-social-linkedin"></i>
                 </div>
-            </div><!---->
+            </div>
             <div class="Chef col-sm-4">
-                <!--<img src="/Assets/Images/profile3.jpg" alt="ChefProfile" class="ChefImg">-->
+                <img src="/Assets/Images/profile3.jpg" alt="ChefProfile" class="ChefImg">
                 <h2 class="ChefName">Trent</h2>
                 <p class="ChefDesc">Chef de Cuisine</p>
                 <div class="Socials row">
@@ -225,7 +225,48 @@
             </div>
         </div>
     </section>
-    <section class="ContactSection" id="ContactSection1"></section>
+    <section class="ContactSection" id="ContactSection">
+        <h1 class="Title">Get In Touch</h1>
+        <hr>
+        <div class="Container">
+            <div class="LeftContainer">
+                <h2 class="InfoTitle">Please give us your feedback!</h2>
+                <p class="Info">We really appreciated honest feedback. So please feel free to send us your opinion on perhaps what you've liked, disliked or what you would like to see from us in the future. <br>All feedback is greatly appreciated.</p>
+                <form class="QueryForm">
+                    <input name="Name" class="Input" type="text" placeholder="e.g. John Doe" required>
+
+                    <input name="Email" class="Input" type="text" placeholder="email@domain.com" required>
+
+                    <textarea name="Message" class="Input InputMessage" type="text" placeholder="Type here" required></textarea>
+                    
+                    <a href="#" class="Button SendBtn">Send</a>
+                </form>
+            </div>
+            <div class="RightContainer">
+                <div class="Details row">
+                    <i class="Icon ion-ios-location"></i>
+                    <p class="Info">123 Waverly Place<br>Sweep Street<br>Dublin 2</p>
+                </div>
+                <div class="Details row">
+                    <i class="Icon ion-email"></i>
+                    <p class="Info">Daily_Brunch<br>@<br>restaurant.ie</p>
+                </div>
+                <div class="Details row">
+                    <i class="Icon ion-ios-telephone"></i>
+                    <p class="Info">0402 32500</p>
+                </div>
+            </div>
+        </div>
+        <div class="Footer">
+            <p class="Disclaimer">Copyright © 2021 Design by Jake Young</p>
+            
+            <div class="Socials row">
+                    <i class="row ion-social-facebook"></i>
+                    <i class="row ion-social-instagram"></i>
+                    <i class="row ion-social-linkedin"></i>
+                </div>
+        </div>
+    </section>
 
     <div class="SpecialsPopup" id="SpecialsPopup">
         <div class="modal Popup">

@@ -1,8 +1,8 @@
 .TeamSection {
     position: relative;
     height: 85vh;
+    
     background-color: $Dark-Blue;
-
     text-align: center;
     font-family: "Open Sans";
 
@@ -10,6 +10,7 @@
         position: absolute;
         top: 10%;
         @include CenterX;
+        
         color: $Light-Brown;
         @include HeaderSize;
     }
@@ -19,45 +20,83 @@
         @include CenterX;
         width: 20%;
         height: .3vh;
-        background-image: linear-gradient(to right, rgba(247,236,228, 0), rgba(247,236,228, 0.75), rgba(111, 82, 59, 0));
-
-        @include CenterX;
+        
+        background-image: linear-gradient(to right, rgba(247, 236, 228, 0), rgba(247, 236, 228, 0.75), rgba(111, 82, 59, 0));
     }
 
     .Info {
         top: 35%;
         width: 50%;
+        @include CenterX;
+        
         color: $Beige;
         font-size: 2.6vh;
-        @include CenterX;
     }
-    
-    .ChefsContainer{
+
+    .ChefsContainer {
         width: 50%;
-        @include CenterFix;
-        position: relative;
-        background-color: orange;
-        .Chef{
-            background-color: antiquewhite;
+        height: 30%;
+        top: 60%;
+        @include CenterX;
+        
+        align-content: center;
+        justify-content: center;
+
+        .Chef {
             position: relative;
-            width: 33.3%;
-            .ChefImg{
+            max-width: 30%;
+            height: 100%;
+            
+            margin: 1%;
+            color: $Light-Brown;
+
+
+            .ChefImg {
                 position: absolute;
-                width: 5%;
-                height: 20%;
-            }
-            
-            .ChefName{
+                width: 35%;
+                height: 50%;
+                @include CenterX;
+                top: 5%;
                 
+                border-radius: 50%;
+                font-weight: bolder;
+                border: 5px solid $Beige;
             }
-            
-            .ChefDesc{
+
+            .ChefName {
+                position: absolute;
+                top: 60%;
+                @include CenterX;
                 
+                color: $Beige;
+                @include RegularSize;
             }
-            
-            .Socials{
-                i{
-                    
+
+            .ChefDesc {
+                position: absolute;
+                top: 70%;
+                width: 100%;
+                @include CenterX;
+                
+                color: $Light-Brown;
+                font-size: 3vh;
+            }
+
+            .Socials {
+                position: absolute;
+                top: 90%;
+                left: 30%;
+
+                i {
+                    font-size: 4vh;
+                    cursor: pointer;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        color: $Beige;
+                        transition: all 0.5s;
+                        transform: scale(1.5);
+                    }
                 }
             }
         }

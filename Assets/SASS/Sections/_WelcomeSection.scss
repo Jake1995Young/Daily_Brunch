@@ -23,7 +23,6 @@
             display: inline;
             font-style: normal;
             @include CenterX;
-
         }
 
         .Name {
@@ -41,6 +40,8 @@
         }
         
         .SpecialsBtn{
+            text-decoration: none;
+            color: $Beige;
             top: 60%;
             @include CenterX;
         }

@@ -1,0 +1,151 @@
+.ContactSection {
+    @include PageSize;
+    background-color: $Beige;
+
+    text-align: center;
+    font-family: "Open Sans";
+
+    .Title {
+        position: absolute;
+        top: 10%;
+        @include CenterX;
+
+        color: $Light-Brown;
+        @include HeaderSize;
+    }
+
+    hr {
+        top: 20%;
+        @include CenterX;
+        width: 20%;
+        height: .3vh;
+    }
+
+    .Container {
+        width: 70%;
+        height: 60%;
+        top: 30%;
+        @include CenterX;
+
+        .LeftContainer {
+            position: relative;
+            width: 70%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            font-family: "Open Sans";
+            @include RegularSize;
+
+            .InfoTitle {
+                position: absolute;
+                top: 5%;
+                @include CenterX;
+                font-weight: bolder;
+            }
+
+            .Info {
+                position: absolute;
+                top: 15%;
+                width: 80%;
+                @include CenterX;
+                font-size: 2vh;
+            }
+
+            .QueryForm {
+                top: 40%;
+                @include CenterX;
+                font-size: 2vh;
+
+                .Input {
+                    width: 100%;
+                    padding: 1%;
+                    margin-bottom: 5%;
+                }
+
+                .SendBtn {
+                    @include CenterX;
+                    top: 95%;
+                    text-decoration: none;
+                    padding: .5rem;
+                    height: 25%;
+
+                    &:hover {
+                        text-decoration: none;
+                        background: $Beige;
+                        color: $Dark-Blue;
+                    }
+                }
+            }
+        }
+
+        .RightContainer {
+            position: absolute;
+            width: 20%;
+            height: 100%;
+            left: 70%;
+            top: 0;
+            overflow: hidden;
+
+            .Details {
+                position: relative;
+                height: 33.3%;
+                width: 100%;
+                @include RegularSize;
+                font-family: "Open Sans";
+
+                .Icon {
+                    position: absolute;
+                    left: 10%;
+                    @include CenterY;
+                    font-size: 10vh;
+                    color: $Light_Brown;
+                }
+
+                .Info {
+                    position: absolute;
+                    left: 25%;
+                    width: 100%;
+                    @include CenterY;
+                    width: 100%;
+                    font-size: 2vh;
+                }
+            }
+        }
+    }
+
+    .Footer {
+        position: absolute;
+        top: 92%;
+        height: 8%;
+        width: 100%;
+        background-color: $Dark-Blue;
+
+        .Disclaimer {
+            @include CenterY;
+            left: 25%;
+            color: $Beige;
+        }
+
+        .Socials {
+            @include CenterY;
+            left: 75%;
+            width: 20%;
+            color: $Light-Brown;
+            @include RegularSize;
+
+            i {
+                float: left;
+                margin-left: 20%;
+                cursor: pointer;
+                transition: all 0.5s;
+
+                &:hover {
+                    color: $Beige;
+                    transition: all 0.5s;
+                    transform: scale(1.5);
+                }
+            }
+        }
+
+    }
+}

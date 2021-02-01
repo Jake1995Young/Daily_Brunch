@@ -620,6 +620,8 @@ hr {
       left: 50%;
       transform: translateX(-50%); }
     .WelcomeSection .Main .SpecialsBtn {
+      text-decoration: none;
+      color: #f7ece4;
       top: 60%;
       position: absolute;
       left: 50%;
@@ -643,7 +645,7 @@ hr {
     transform: translateX(-50%); }
   .OfferSection .Info {
     top: 25%;
-    width: 35%;
+    width: 40%;
     font-size: 3vh;
     position: absolute;
     left: 50%;
@@ -794,34 +796,203 @@ hr {
     transform: translateX(-50%);
     width: 20%;
     height: .3vh;
-    background-image: linear-gradient(to right, rgba(247, 236, 228, 0), rgba(247, 236, 228, 0.75), rgba(111, 82, 59, 0));
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%); }
+    background-image: linear-gradient(to right, rgba(247, 236, 228, 0), rgba(247, 236, 228, 0.75), rgba(111, 82, 59, 0)); }
   .TeamSection .Info {
     top: 35%;
     width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     color: #f7ece4;
-    font-size: 2.6vh;
+    font-size: 2.6vh; }
+  .TeamSection .ChefsContainer {
+    width: 50%;
+    height: 30%;
+    top: 60%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-content: center;
+    justify-content: center; }
+    .TeamSection .ChefsContainer .Chef {
+      position: relative;
+      max-width: 30%;
+      height: 100%;
+      margin: 1%;
+      color: #b76935; }
+      .TeamSection .ChefsContainer .Chef .ChefImg {
+        position: absolute;
+        width: 35%;
+        height: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 5%;
+        border-radius: 50%;
+        font-weight: bolder;
+        border: 5px solid #f7ece4; }
+      .TeamSection .ChefsContainer .Chef .ChefName {
+        position: absolute;
+        top: 60%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #f7ece4;
+        font-size: 3vh; }
+      .TeamSection .ChefsContainer .Chef .ChefDesc {
+        position: absolute;
+        top: 70%;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #b76935;
+        font-size: 3vh; }
+      .TeamSection .ChefsContainer .Chef .Socials {
+        position: absolute;
+        top: 90%;
+        left: 30%; }
+        .TeamSection .ChefsContainer .Chef .Socials i {
+          font-size: 4vh;
+          cursor: pointer;
+          transition: all 0.5s; }
+          .TeamSection .ChefsContainer .Chef .Socials i:hover {
+            color: #f7ece4;
+            transition: all 0.5s;
+            transform: scale(1.5); }
+
+.ContactSection {
+  position: relative;
+  height: 100vh;
+  background-color: #f7ece4;
+  text-align: center;
+  font-family: "Open Sans"; }
+  .ContactSection .Title {
+    position: absolute;
+    top: 10%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #b76935;
+    font-size: 6vh; }
+  .ContactSection hr {
+    top: 20%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: .3vh; }
+  .ContactSection .Container {
+    width: 70%;
+    height: 60%;
+    top: 30%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%); }
-  .TeamSection .ChefsContainer {
-    width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: relative;
-    background-color: orange; }
-    .TeamSection .ChefsContainer .Chef {
-      background-color: antiquewhite;
+    .ContactSection .Container .LeftContainer {
       position: relative;
-      width: 33.3%; }
-      .TeamSection .ChefsContainer .Chef .ChefImg {
+      width: 70%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      font-family: "Open Sans";
+      font-size: 3vh; }
+      .ContactSection .Container .LeftContainer .InfoTitle {
         position: absolute;
-        width: 5%;
-        height: 20%; }
+        top: 5%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: bolder; }
+      .ContactSection .Container .LeftContainer .Info {
+        position: absolute;
+        top: 15%;
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2vh; }
+      .ContactSection .Container .LeftContainer .QueryForm {
+        top: 40%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2vh; }
+        .ContactSection .Container .LeftContainer .QueryForm .Input {
+          width: 100%;
+          padding: 1%;
+          margin-bottom: 5%; }
+        .ContactSection .Container .LeftContainer .QueryForm .SendBtn {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 95%;
+          text-decoration: none;
+          padding: .5rem;
+          height: 25%; }
+          .ContactSection .Container .LeftContainer .QueryForm .SendBtn:hover {
+            text-decoration: none;
+            background: #f7ece4;
+            color: #143642; }
+    .ContactSection .Container .RightContainer {
+      position: absolute;
+      width: 20%;
+      height: 100%;
+      left: 70%;
+      top: 0;
+      overflow: hidden; }
+      .ContactSection .Container .RightContainer .Details {
+        position: relative;
+        height: 33.3%;
+        width: 100%;
+        font-size: 3vh;
+        font-family: "Open Sans"; }
+        .ContactSection .Container .RightContainer .Details .Icon {
+          position: absolute;
+          left: 10%;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 10vh;
+          color: #b76935; }
+        .ContactSection .Container .RightContainer .Details .Info {
+          position: absolute;
+          left: 25%;
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 100%;
+          font-size: 2vh; }
+  .ContactSection .Footer {
+    position: absolute;
+    top: 92%;
+    height: 8%;
+    width: 100%;
+    background-color: #143642; }
+    .ContactSection .Footer .Disclaimer {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 25%;
+      color: #f7ece4; }
+    .ContactSection .Footer .Socials {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 75%;
+      width: 20%;
+      color: #b76935;
+      font-size: 3vh; }
+      .ContactSection .Footer .Socials i {
+        float: left;
+        margin-left: 20%;
+        cursor: pointer;
+        transition: all 0.5s; }
+        .ContactSection .Footer .Socials i:hover {
+          color: #f7ece4;
+          transition: all 0.5s;
+          transform: scale(1.5); }
 
 .PageDividerSection {
   position: relative;
@@ -839,6 +1010,7 @@ hr {
     position: absolute;
     top: 50%;
     left: 70%;
+    text-decoration: none;
     transform: translateY(-50%); }
   .PageDividerSection .Button:hover {
     background: #f7ece4;
