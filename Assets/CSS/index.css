@@ -1093,19 +1093,23 @@ hr {
       height: 30vh;
       width: 37vh; }
     .ShopSection .Container .InfoContainer {
-      top: -35%; }
+      top: -32%; }
     .ShopSection .Container .MedTitle {
       font-size: 3vh; }
     .ShopSection .Container .Info {
       font-size: 1.7vh; }
   .ShopSection .SpecialsTitle {
-    top: 40%; }
+    top: 46%; }
+  .ShopSection .SpecialsHR {
+    top: 51%; }
   .ShopSection .SpecialsInfo {
-    top: 48%;
-    font-size: 2vh; }
+    top: 53%;
+    font-size: 2vh;
+    width: 75%; }
   .ShopSection .SpecialCardContainer {
     position: absolute;
     left: 55%;
+    top: 65%;
     transform: translateX(-50%);
     width: 75%;
     height: 10%; }
@@ -1124,7 +1128,13 @@ hr {
         text-align: center;
         width: 70%;
         height: 20%;
-        font-size: 2vh; }
+        font-size: 2vh;
+        padding: .5rem; }
+        .ShopSection .SpecialCardContainer .SpecialCard .Button a {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
   .SpecialsPopup .Popup .PopupContainer .InfoPopup .Title {
     top: 5%;
     left: 5%;
@@ -1142,4 +1152,72 @@ hr {
   .SpecialsPopup .Popup .PopupContainer .InfoPopup .CloseBtn {
     left: 85%; }
   .SpecialsPopup .Popup .PopupContainer .BGPopup {
-    clip-path: polygon(100% 40%, 100% 100%, 0 100%, 0% 75%); } }
+    clip-path: polygon(100% 40%, 100% 100%, 0 100%, 0% 75%); }
+  .TeamSection .Title {
+    font-size: 4vh; }
+  .TeamSection hr {
+    top: 22%; }
+  .TeamSection .Info {
+    font-size: 2vh;
+    top: 30%;
+    width: 80%; }
+  .TeamSection .ChefsContainer {
+    width: 90%;
+    position: absolute;
+    left: 53%; }
+    .TeamSection .ChefsContainer .Chef .ChefImg {
+      width: 90%; }
+    .TeamSection .ChefsContainer .Chef .ChefName,
+    .TeamSection .ChefsContainer .Chef .ChefDesc {
+      font-size: 2vh; }
+    .TeamSection .ChefsContainer .Chef .Socials {
+      position: absolute;
+      left: 63%;
+      transform: translateX(-50%);
+      width: 100%; }
+      .TeamSection .ChefsContainer .Chef .Socials i {
+        font-size: 3vh; }
+  .ContactSection {
+    height: 140vh; }
+    .ContactSection .Title {
+      font-size: 4vh;
+      top: 2%;
+      width: 100%; }
+    .ContactSection hr {
+      top: 6%; }
+    .ContactSection .Container {
+      top: 8%;
+      left: 0%;
+      position: absolute;
+      transform: translateX(-50%); }
+      .ContactSection .Container .RightContainer {
+        top: 0%;
+        width: 100%; }
+        .ContactSection .Container .RightContainer .Details {
+          height: 15%; }
+          .ContactSection .Container .RightContainer .Details .Icon {
+            font-size: 6vh; }
+          .ContactSection .Container .RightContainer .Details .Info {
+            font-size: 1.7vh; }
+      .ContactSection .Container .LeftContainer {
+        position: relative;
+        left: 50%;
+        top: 45%;
+        width: 100%;
+        transform: translateX(25%);
+        font-size: 2vh; }
+        .ContactSection .Container .LeftContainer .InfoTitle {
+          position: absolute;
+          width: 100%;
+          top: 0%;
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: 2.7vh; }
+        .ContactSection .Container .LeftContainer .Info {
+          top: 10%;
+          width: 100%;
+          font-size: 2vh; }
+        .ContactSection .Container .LeftContainer .QueryForm {
+          width: 100%; }
+          .ContactSection .Container .LeftContainer .QueryForm .Input {
+            width: 90%; } }

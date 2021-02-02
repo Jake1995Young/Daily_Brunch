@@ -128,7 +128,7 @@
             }
 
             .InfoContainer {
-                top: -35%;
+                top: -32%;
             }
 
             .MedTitle {
@@ -141,18 +141,24 @@
         }
 
         .SpecialsTitle {
-            top: 40%;
+            top: 46%;
+        }
+
+        .SpecialsHR {
+            top: 51%;
         }
 
         .SpecialsInfo {
-            top: 48%;
+            top: 53%;
             font-size: 2vh;
+            width: 75%;
         }
 
 
         .SpecialCardContainer {
             position: absolute;
             left: 55%;
+            top: 65%;
             transform: translateX(-50%);
             width: 75%;
             height: 10%;
@@ -178,6 +184,14 @@
                     width: 70%;
                     height: 20%;
                     font-size: 2vh;
+                    padding: .5rem;
+
+                    a {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
                 }
             }
         }
@@ -214,6 +228,122 @@
 
                 .BGPopup {
                     clip-path: polygon(100% 40%, 100% 100%, 0 100%, 0% 75%);
+                }
+            }
+        }
+    }
+
+    .TeamSection {
+        .Title {
+            font-size: 4vh;
+        }
+
+        hr {
+            top: 22%;
+        }
+
+        .Info {
+            font-size: 2vh;
+            top: 30%;
+            width: 80%;
+        }
+
+        .ChefsContainer {
+            width: 90%;
+            position: absolute;
+            left: 53%;
+
+
+            .Chef {
+                .ChefImg {
+                    width: 90%;
+                }
+
+                .ChefName,
+                .ChefDesc {
+                    font-size: 2vh;
+                }
+
+                .Socials {
+                    position: absolute;
+                    left: 63%;
+                    transform: translateX(-50%);
+                    width: 100%;
+
+                    i {
+                        font-size: 3vh;
+                    }
+                }
+            }
+        }
+    }
+
+    .ContactSection {
+        height: 140vh;
+        
+        .Title {
+            font-size: 4vh;
+            top: 2%;
+            
+            width: 100%;
+        }
+
+        hr {
+            top: 6%;
+        }
+
+        .Container {
+            top: 8%;
+            left: 0%;
+            position: absolute;
+            transform: translateX(-50%);
+
+            .RightContainer {
+                top: 0%;
+                width: 100%;
+                
+                .Details{
+                    height: 15%;
+                    .Icon{
+                        font-size: 6vh;
+                    }
+                    .Info{
+                        font-size: 1.7vh;
+                    }
+                }
+            }
+
+            .LeftContainer {
+                position: relative;
+                left: 50%;
+                top: 45%;
+                width: 100%;
+                transform: translateX(25%);
+                
+                font-size: 2vh;
+                
+                .InfoTitle{
+                    position: absolute;
+                    width: 100%;
+                    top: 0%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    
+                    font-size: 2.7vh;
+                }
+                
+                .Info{
+                    top: 10%;
+                    width: 100%;
+                    
+                    font-size: 2vh;
+                }
+                
+                .QueryForm{
+                    width: 100%;
+                    .Input{
+                        width: 90%
+                    }
                 }
             }
         }
