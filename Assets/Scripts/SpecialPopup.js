@@ -12,7 +12,7 @@ const openModal1 = () => {
     body.style.overflow = "hidden";
     document.getElementById("PopupTitle").innerHTML = "Flat White";
     document.getElementById("PopupInfo").innerHTML = "An espresso classic built from two ristretto shots for a slightly sweeter finish with velvety steamed whole milk";
-    document.getElementById("PopupImg").src="/Assets/Images/Coffee3.jpg";
+    document.getElementById("PopupImg").src="/Daily_Brunch/Assets/Images/Coffee3.jpg";
 };
 
 const openModal2 = () => {
@@ -20,7 +20,7 @@ const openModal2 = () => {
     body.style.overflow = "hidden";
     document.getElementById("PopupTitle").innerHTML = "Sunday Fruit Salad";
     document.getElementById("PopupInfo").innerHTML = "The freshest fruits are used in this salad, for this recipe all the fruits come from a small village in the Carribean, which ranges from dragon fruit to goyaba";
-    document.getElementById("PopupImg").src="/Assets/Images/Meal3.jpg";
+    document.getElementById("PopupImg").src="/Daily_Brunch/Assets/Images/Meal3.jpg";
 };
 
 const openModal3 = () => {
@@ -28,14 +28,13 @@ const openModal3 = () => {
     body.style.overflow = "hidden";
     document.getElementById("PopupTitle").innerHTML = "Strawberry Bellini";
     document.getElementById("PopupInfo").innerHTML = "This strawberry belini is like no other, it is made from locally sourced Wexford strawberries and topped with fresh bottle of Don Perignon";
-    document.getElementById("PopupImg").src="/Assets/Images/Cocktail1.jpg";
+    document.getElementById("PopupImg").src="/Daily_Brunch/Assets/Images/Cocktail1.jpg";
 
 };
 const closeModal = () => {
     modal.classList.remove("is-open");
     body.style.overflow = "initial";
 };
-
 
 modalButton1.addEventListener("click", openModal1);
 modalButton2.addEventListener("click", openModal2);
